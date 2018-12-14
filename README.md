@@ -1,11 +1,16 @@
 # Whalebooks 🐬🐳🐋🌊🐟🐠🐡
 
 
-This is an ad hoc emoji-driven research group bringing together researchers from UW, APL, <affiliates>. 
+This is an ad hoc research group bringing together researchers from UW, APL, and affiliates: Concerning whale data particularly from hydrophones. This landing page includes some start-of-project notes.  
 
 
-The primary emphasis is whales 🐬🐳🐋. The materials in this repo are oriented towards processing whale-related data. 
+Our first idea is to build a gold-plated dataset of five-second clips that do / do not include biological sounds. The
+biological sounds are vocalizations from both baleen and toothed whales, the latter including orcas, dolphins and porpoises. 
 
+* [Broken link](http://google.com) is the initial game using data from the Regional Cabled Array Oregon Slope Base hydrophone.
+* The [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) is currently available
+* The [Megaptera game (broken link)](http://google.com) is intended for identifying specifically Humpback whales
 
-To play along on the Bering Strait please create an account and play Whale Or Fail at 
-[http://arcticwhaledr.swipesforscience.org](http://arcticwhaledr.swipesforscience.org).
+### Additional remarks
+
+* From Arctic: A3150919_08_1970_01_01T00_00_45_767212Z is a truly excellent low-frequency humpback call
