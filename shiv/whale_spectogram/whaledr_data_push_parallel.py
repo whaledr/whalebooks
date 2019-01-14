@@ -1,20 +1,25 @@
+"""
+Script to generate and upload spectogram for whale calls from OOI website.
+"""
+import math as M
+import numpy as np
+import os
+from os.path import expanduser
+import time
+import logging
+
 from obspy import read
 from obspy.core import UTCDateTime
-import numpy as np
 from matplotlib import mlab
 from matplotlib.colors import Normalize
 import matplotlib.pyplot as plt
-import math as M
 import requests
 from lxml import html
-import os
 import boto3
 from multiprocessing import Pool
-from os.path import expanduser
 import json
 import gc
-import time
-import logging
+
 logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO)
 
 
