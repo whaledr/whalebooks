@@ -4,10 +4,17 @@ This repo consists of file whaledr_data_push_parallel.py which grabs data from [
 to s3 bucket.
 
 ## Environment setup
+Run the following set of commands to setup the environment before running the script.
 
-Setup the environment using conda and installing requisite python packages using the `requirements.txt` file provided
-
-`pip install -r requirements.txt`
+```
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+rm Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda create -n whaledr python=3.6
+conda activate whaledr
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -15,9 +22,9 @@ Before executing the `whaledr_data_push_parallel.py` initial setup requires sett
 
 Provide one time `key_id` and `key_access` to be stored in the `home` folder as `creds.json` which will be used by `data_fetch.py`.
 ```
+import json
 import os
 from os.path import expanduser
-
 home = expanduser("~")
 # store one time credentials in the home directory
 creds = {'key_id' : '',
