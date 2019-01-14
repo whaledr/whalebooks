@@ -3,12 +3,9 @@
 This repo consists of file whaledr_data_push_parallel.py which grabs data from [OOI](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) website and upload 5 sec Spectogram and respective sound file to s3 bucket.
 
 ## Environment setup
-Run the following set of commands to setup the environment before running the script. These commands would get the script from github and setup the necessary conda environment.
+Run the following set of commands to setup the environment before running the script. These commands would setup the necessary conda environment and get the `whaledr_data_push_parallel.py` script alongside the `requirements.txt` file.
 
 ```
-git clone https://github.com/whaledr/whalebooks.git
-cd whalebooks/shiv/whale_spectogram/ 
-
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh
@@ -16,6 +13,8 @@ source ~/.bashrc
 conda create -n whaledr python=3.6
 conda activate whaledr
 
+git clone https://github.com/whaledr/whalebooks.git
+cd whalebooks/shiv/whale_spectogram/ 
 pip install -r requirements.txt
 ```
 
