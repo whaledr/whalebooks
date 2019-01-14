@@ -49,5 +49,5 @@ Once data is uploaded to S3 bucket, sync has to be initiated for the files to be
 
 ## Runtime
 
-For a single day of data it takes ~5 hours on a c5.4x large machine multiprocessed over 12 CPU's. The runtime may vary based on days with ideal day containing ~30GB of file size( both wav and spectogram) with ~30000 files.
+For a single day of data it takes ~5 hours on a c5.4x large machine multiprocessed over 12 CPU's. The runtime may vary based on days with ideal day containing ~30GB of file size with ~30000 files (both wav and spectogram).
 
