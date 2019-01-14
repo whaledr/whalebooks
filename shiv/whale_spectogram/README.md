@@ -30,8 +30,9 @@ from os.path import expanduser
 
 home = expanduser("~")
 # store one time credentials in the home directory
-creds = {'key_id' : '',
-         'key_access' : ''}
+creds = {'key_id' : '', # provide key_id
+         'key_access' : '' # provide key_access
+         } 
 with open(os.path.join(home,'creds.json'), 'a') as cred:
     json.dump(creds, cred)
 ```
