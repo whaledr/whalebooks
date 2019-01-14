@@ -165,8 +165,8 @@ if __name__ == '__main__':
     mainurl = 'https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/2017/10/09/'
     url_list = get_data_url_list(mainurl)
     try:
-        pool = Pool(1)                         # Create a multiprocessing Pool
-        pool.map(data_push, url_list[:1])  # process data_inputs iterable with pool
+        pool = Pool(12)                         # Create a multiprocessing Pool
+        pool.map(data_push, url_list)  # process data_inputs iterable with pool
     finally:
         pool.close()
         pool.join()
