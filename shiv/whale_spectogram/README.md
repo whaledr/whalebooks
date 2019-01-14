@@ -38,7 +38,7 @@ with open(os.path.join(home,'creds.json'), 'a') as cred:
 
 Post setting up credentials next steps involves defining the day of data to upload to S3: Ex. For pushing 10/09/2017 set: `mainurl = 'https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/2017/10/09/'` 
 
-Note: Current S3 bucket is configured as `Himatdata/whaledr_renamed` which can be changed accordingly.
+Note: Current S3 bucket is configured as `himatdata/whaledr_renamed` which can be changed accordingly.
 
 Run script: `python whaledr_data_push_parallel.py`
       
