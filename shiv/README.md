@@ -1,7 +1,6 @@
-# OOI Data Retrieval
+# Whaledr Spectogram generation.
 
-This repo consists of file whaledr_data_push_parallel.py which grabs data from [OOI](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) website and upload 5 sec Spectogram and respective sound file 
-to s3 bucket.
+This repo consists of file whaledr_data_push_parallel.py which grabs data from [OOI](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) website and upload 5 sec Spectogram and respective sound file to s3 bucket.
 
 ## Environment setup
 Run the following set of commands to setup the environment before running the script.
@@ -37,6 +36,7 @@ Post setting up credentials next steps involves defining the day of data to uplo
 
 Ex. For pushing 10/09/2017 set: `mainurl = 'https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/2017/10/09/'` 
 
+Current S3 bucket is configured as `Himatdata/whaledr_renamed` which can be changed accordingly.
       
 ## Sync for the whaledr app
 
