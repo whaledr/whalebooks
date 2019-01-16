@@ -1,6 +1,6 @@
 # Whaledr Spectogram generation.
 
-This repo consists of file whaledr_data_push_parallel.py which grabs data from [OOI](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) website and upload 5 sec Spectogram and respective sound file to s3 bucket.
+This asdf repo consists of file whaledr_data_push_parallel.py which grabs data from [OOI](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) website and upload 5 sec Spectogram and respective sound file to s3 bucket.
 
 ## Environment setup
 Run the following set of commands to setup the environment before running the script. These commands would setup the necessary conda environment and get the `whaledr_data_push_parallel.py` script alongside the `requirements.txt` file.
