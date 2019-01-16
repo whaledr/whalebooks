@@ -1,9 +1,13 @@
-# Whaledr Spectogram generation.
+# Whaledr Spectrogram generation
 
-This asdf repo consists of file whaledr_data_push_parallel.py which grabs data from [OOI](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) website and upload 5 sec Spectogram and respective sound file to s3 bucket.
+This repo consists of whaledr_data_push_parallel.py which grabs data from an [OOI Regional Cabled Array server](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/) and uploads 5 second 
+spectrogram image + sound clip files to AWS S3 object storage.
 
 ## Environment setup
-Run the following set of commands to setup the environment before running the script. These commands would setup the necessary conda environment and get the `whaledr_data_push_parallel.py` script alongside the `requirements.txt` file.
+
+Run the following from a Linux command prompt to set up the environment before running the script. 
+These commands set up the necessary conda environment and get the `whaledr_data_push_parallel.py` 
+script alongside the `requirements.txt` file.
 
 ```
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -18,9 +22,17 @@ cd whalebooks/shiv/whale_spectogram/
 pip install -r requirements.txt
 ```
 
+The above script summarized: 
+
+* Install a small version of Anaconda called 'Miniconda'
+* Update it to latest
+* Create and activate a Python environment called *whaledr*
+* Clone this repository and run pip install using ```requirements.txt```
+  * This installs the proper versions of the necessary Python packages
+
 ## Usage
 
-Before executing the `whaledr_data_push_parallel.py` initial setup requires setting up requisite credential file for AWS S3.
+Before executing the ```whaledr_data_push_parallel.py``` script: Install a requisite credential file for AWS S3 access.
 
 Provide one time `key_id` and `key_access` to be stored in the `home` folder as `creds.json` which will be used by `data_fetch.py`.
 ```
