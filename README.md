@@ -7,7 +7,8 @@ This is an ad hoc research group bringing together researchers from UW, APL, and
 Our first idea is to build a gold-plated dataset of five-second clips that do / do not include biological sounds. The
 biological sounds are vocalizations from both baleen and toothed whales, the latter including orcas, dolphins and porpoises. 
 
-* [Broken link](http://google.com) is the initial game using data from the Regional Cabled Array Oregon Slope Base hydrophone.
+* [Whaledr](https://whale-dr.firebaseapp.com/#/play) is the first version of our whale identification game
+  * Built on data from the [Regional Cabled Array](https://interactiveoceans.washington.edu/story/The_Regional_Cabled_Array) Oregon Slope Base broadband hydrophone
 * The [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) is currently available
 * The [Megaptera game](http://megaptera.swipesforscience.org/#/) is intended for identifying specifically Humpback whales
 
