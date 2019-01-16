@@ -9,7 +9,7 @@ biological sounds are vocalizations from both baleen and toothed whales, the lat
 
 * [Broken link](http://google.com) is the initial game using data from the Regional Cabled Array Oregon Slope Base hydrophone.
 * The [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) is currently available
-* The [Megaptera game (broken link)](http://google.com) is intended for identifying specifically Humpback whales
+* The [Megaptera game](http://megaptera.swipesforscience.org/#/) is intended for identifying specifically Humpback whales
 
 ### Additional remarks
 
