@@ -163,12 +163,16 @@ mainurl = 'https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA
 
 Modify the date in this string to reflect the desired day to process.
 
-- The following line contains the number `12` which reflect the number of **cores** (not vCPUs) found
-on the EC2 instance. Modify this if necessary to match the instance you are using.
+- The following line of the script contains the number `12` which reflect the number of **cores** (not vCPUs) 
+on the EC2 instance. Modify this if necessary to match the number of cores on the instance you are using.
 
+```
+        pool = Pool(12)                         # Create a multiprocessing Pool
+```
 
-Note that the S3 bucket is named as `himatdata/whaledr_renamed`. Make sure this is where you intend your
-results to go. 
+**Note** that the script writes to an S3 bucket named `himatdata/whaledr_renamed`. 
+Make sure this is where you intend your results to go. 
+
 
 ### Run the script
 
