@@ -1,4 +1,4 @@
-# Whaledr Spectrogram generation
+# Whaledr spectrogram generation
 
 ## Overview
 
