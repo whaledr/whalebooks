@@ -83,6 +83,8 @@ def data_push(data_url):
     client = boto3.client('s3', aws_access_key_id=creds_data['key_id'],
             aws_secret_access_key=creds_data['key_access'])
     try:
+        hydrophone_name = data_url.split('/')[5]
+        url_date = data_url.split('--')[1][4:14].replace('-','_')
         # Read from url
         stream = read(data_url)
         samp_rate = stream[0].stats.sampling_rate
@@ -144,7 +146,7 @@ def data_push(data_url):
                 filename = st[0].stats.network+'_'+st[0].stats.station+'_'+st[0].stats.location+'_'+st[0].stats.channel+'_'+str(UTCDateTime(pingtimes[i])).replace("-", "_").replace(
         ":", "_")
                 plt.savefig(filename[:-8] + '.jpg')
-                client.upload_file(filename[:-8] + '.jpg', 'himatdata', 'whaledr_renamed/' + filename[:-8] + '.jpg')
+                client.upload_file(filename[:-8] + '.jpg', 'himatdata', 'whaledr_renamed/{}/{}/'.format(hydrophone_name, url_date) +filename[:-8] + '.jpg')
                 os.remove(filename[:-8] + '.jpg')
                 plt.cla()
                 plt.clf()
@@ -152,7 +154,7 @@ def data_push(data_url):
 
                 # save audio
                 Save2Wav(st[0], filename, samp_rate)
-                client.upload_file(filename[:-8] + '.wav', 'himatdata', 'whaledr_renamed/' + filename[:-8] + '.wav')
+                client.upload_file(filename[:-8] + '.wav', 'himatdata', 'whaledr_renamed/{}/{}/'.format(hydrophone_name, url_date) + filename[:-8] + '.wav')
                 os.remove(filename[:-8] + '.wav')
                 # delete large objects to release memory.
                 del trace, st[0]
