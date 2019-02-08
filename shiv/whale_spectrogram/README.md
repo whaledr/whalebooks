@@ -38,13 +38,13 @@ to speed up the task.
 
 ### Good megaptera days / sites
 
-2018-11-15T06:07:47Z    80meter
-2018-12-10T12:50:45Z    80meter
-2018-12-28T09:23:24Z    80meter
-2019-01-12T03:10:31Z    500meter   <--- very nice day
-2019-01-07T14:55:27Z    500meter
-2019-01-14T11:39:34Z    500meter
-2018-12-28T03:17:33Z    SlopeBase
+- 2018-11-15T06:07:47Z    80meter
+- 2018-12-10T12:50:45Z    80meter
+- 2018-12-28T09:23:24Z    80meter
+- 2019-01-12T03:10:31Z    500meter   <--- very nice day
+- 2019-01-07T14:55:27Z    500meter
+- 2019-01-14T11:39:34Z    500meter
+- 2018-12-28T03:17:33Z    SlopeBase
 
 ## Overviews
 
@@ -54,14 +54,9 @@ to speed up the task.
 - Configure a Python environment, processing code and AWS credentials
 - From a `screen` shell start the processing task; and wait for that to complete
 - Note the data contribution in this README
+- Post-process for app
 
 ### Medium-resolution walkthrough
-
-
-
-
-### Medium resolution
-
 
 Read this to get a fairly complete picture of all the steps. They are repeated once more in
 more detail in the following section.
@@ -236,13 +231,18 @@ of data with no source dropouts will produce 30GB of **.wav** + **.png** files, 
 this being 24 hours x 60 minutes x 12 5-second intervals per minute x 2 file types.
 
 
-## Walkthrough
 ## Screen
+
+- Start a Linux `screen` session so that you can leave the subsequent processing job running
+  - You invoke this by simply typing `screen` on the command line
+  - You are then *in* the screen shell; you leave using `ctrl + a + ctrl + d`
+  - You find a running screen session using `screen -ls`
+    - This returns `There is a screen on: 5981.pts-0.ip-172-31-18-10   (Detached)`
+  - You reconnect to this session using `screen 5981.pts-0.ip-172-31-18.10`
+  
 ## Create an AMI
 ## Re-use an AMI
 ## Data manifest
-
-## Days processed
 
 - whaledr bucket
   - megaptera folder
