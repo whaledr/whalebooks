@@ -4,9 +4,9 @@
 
 - [Introduction](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#introduction)
 - [Overviews: Low-res and Medium-res walk-throughs](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#overviews)
-- [High-res walkthrough]((https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#walkthrough)
+- [High-res walkthrough](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#walkthrough)
 - [Using **Screen**]((https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#screen)
-- [Creating an AMI]((https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#create_an_ami)
+- [Creating an AMI](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#create_an_ami)
 - [AMI Reprocessing](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#re-use_an_ami)
 
 
