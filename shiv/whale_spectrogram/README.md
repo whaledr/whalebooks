@@ -2,9 +2,13 @@
 
 ## Contents
 
-- Introduction
-- Low-res and Medium-res overviews
-- High-res walkthrough
+- [Introduction](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#introduction)
+- [Overviews: Low-res and Medium-res walk-throughs](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#overviews)
+- [High-res walkthrough]((https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#walkthrough)
+- [Using **Screen**]((https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#screen)
+- [Creating an AMI]((https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#create_an_ami)
+- [AMI Reprocessing](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#re-use_an_ami)
+
 
 ## Introduction
 
@@ -13,6 +17,13 @@ broadband hydrophone data to AWS S3 object storage: Both sound files and
 corresponding spectrogram images (png). We provide low-resolution and medium-resolution 
 overviews of the process here. A detailed walkthrough follows in the next section.
 
+## Overviews
+### Low-resolution walkthrough
+### Medium-resolution walkthrough
+## Walkthrough
+## Screen
+## Create an AMI
+## Re-use an AMI
 ### Low resolution
 
 - Start an EC2 instance on AWS running Ubuntu
