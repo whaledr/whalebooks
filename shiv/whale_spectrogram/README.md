@@ -9,8 +9,8 @@
 - [Using **Screen**](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#screen)
 - [Creating an AMI](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#create_an_ami)
 - [Re-using an AMI](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#re-use_an_ami)
-- [Whaledr Post-processing](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#post_processing)
 - [Data Manifest](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#data_manifest)
+- [Whaledr Post-processing](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#post-processing)
 
 
 
