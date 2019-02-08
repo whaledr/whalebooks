@@ -9,28 +9,55 @@
 - [Using **Screen**](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#screen)
 - [Creating an AMI](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#create_an_ami)
 - [Re-using an AMI](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#re-use_an_ami)
+- [Whaledr Post-processing](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#post_processing)
+- [Data Manifest](https://github.com/whaledr/whalebooks/blob/master/shiv/whale_spectrogram/README.md#data_manifest)
+
 
 
 ## Introduction
 
-This folder -- including these instructions -- walks through *loading* one day's worth of
-broadband hydrophone data to AWS S3 object storage: Both sound files and 
-corresponding spectrogram images (png). We provide low-resolution and medium-resolution 
-overviews of the process here. A detailed walkthrough follows in the next section.
+We are working with broadband hydrophones in the Ocean Observing Initiative **Regional Cabled Array**. These hydrophones
+record surface noise from storms, ship passage, seismic signal, and marine mammal vocalizations, particularly whales. 
+We are very interested in sharing this data and for this reason we need to do some preliminary data processing. 
+Specifically this set of instructions walks through *loading* one day's worth of broadband hydrophone data to AWS S3 object 
+storage by means of an AWS EC2 instance, a virtual machine (computer) on the public cloud.  
+
+Both sound files and corresponding spectrogram images (png) are generated and stored. The source data are in seismic
+`.mseed` format. Before going into the walkthrough we provide both low- and medium-resolution descriptions of the 
+process. After the walkthrough we also describe using the Linux `screen` utility and using Amazon Machine Images (AMIs)
+to speed up the task.
+
+### Hydrophones
+
+- 80 meter site on LJ01D
+- Endurance 500 meter site LJ01C
+- Oregon Slope Base profiler, seafloor, about 2900 meters LJ01A
+- 200 meter *platform* for the Oregon Slope Base Shallow Profiler PC01A
+- Axial Base seafloor for profiler LJ03A
+- Axial shallow profiler 200 meter platform (offline since last summer) PC03A
+
+### Good megaptera days / sites
+
+2018-11-15T06:07:47Z    80meter
+2018-12-10T12:50:45Z    80meter
+2018-12-28T09:23:24Z    80meter
+2019-01-12T03:10:31Z    500meter   <--- very nice day
+2019-01-07T14:55:27Z    500meter
+2019-01-14T11:39:34Z    500meter
+2018-12-28T03:17:33Z    SlopeBase
 
 ## Overviews
+
 ### Low-resolution walkthrough
-### Medium-resolution walkthrough
-## Walkthrough
-## Screen
-## Create an AMI
-## Re-use an AMI
-### Low resolution
 
 - Start an EC2 instance on AWS running Ubuntu
 - Configure a Python environment, processing code and AWS credentials
 - From a `screen` shell start the processing task; and wait for that to complete
-- Enter the data addition in the data record at the bottom of this README
+- Note the data contribution in this README
+
+### Medium-resolution walkthrough
+
+
 
 
 ### Medium resolution
@@ -209,6 +236,28 @@ of data with no source dropouts will produce 30GB of **.wav** + **.png** files, 
 this being 24 hours x 60 minutes x 12 5-second intervals per minute x 2 file types.
 
 
+## Walkthrough
+## Screen
+## Create an AMI
+## Re-use an AMI
+## Data manifest
+
+## Days processed
+
+- whaledr bucket
+  - megaptera folder
+    - 500 meter Endurance array hydrophone
+      - January 12 2019
+    - Oregon slope base hydrophone
+      - October 6 2017
+
+- himatdata bucket
+  - whaledr_renamed folder
+    - Oregon slope base hydrophone
+      - 2017 October 03, 04, 05
+      - 2017 October 07 (partial), 08, 09, 10, 11, 12, 13, 17
+
+
 ## Post-processing
 
 ### Sync for the whaledr app
@@ -223,8 +272,4 @@ The synch is done through the firebase web console for the application.
 * Click **Refresh Sample List** button
 * To verify something is happening: Notice the *You have N items currently* change the value of N
 
-## Days processed
 
-- 2017
-  - October
-    - 03, 04, 05, 06, 07 (partial day), 08, 09, 10, 11, 12, 13, 17 (by Rob, in progress)
