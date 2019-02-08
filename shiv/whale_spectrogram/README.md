@@ -2,11 +2,10 @@
 
 ## Overview
 
-This folder -- including these instructions -- walks you through *loading* one day's worth of
-broadband hydrophone data to AWS S3 object storage: Both 5-second sound files and the 
-corresponding png images of the 5-second clip viewed as a spectrogram. To prepare you for this
-process we provide a low-resolution and a medium-resolution description. The detailed walkthrough
-follows in the next section.
+This folder -- including these instructions -- walks through *loading* one day's worth of
+broadband hydrophone data to AWS S3 object storage: Both sound files and 
+corresponding spectrogram images (png). We provide low-resolution and medium-resolution 
+overviews of the process here. A detailed walkthrough follows in the next section.
 
 ### Low resolution
 
@@ -165,13 +164,14 @@ Modify the date in this string to reflect the desired day to process.
 
 - The following line of the script contains the number `12` which reflect the number of **cores** (not vCPUs) 
 on the EC2 instance. Modify this if necessary to match the number of cores on the instance you are using.
+- Example: The c5n.xlarge EC2 instance has 4 vCPUs and therefore 2 cores. `12` becomes `2` in the following:
 
 ```
         pool = Pool(12)                         # Create a multiprocessing Pool
 ```
 
 **Note** that the script writes to an S3 bucket named `himatdata/whaledr_renamed`. 
-Make sure this is where you intend your results to go. 
+Make sure your script is writing to the S3 location you intend.
 
 
 ### Run the script
