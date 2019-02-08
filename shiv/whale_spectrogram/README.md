@@ -1,6 +1,12 @@
 # Whaledr spectrogram generation
 
-## Overview
+## Contents
+
+- Introduction
+- Low-res and Medium-res overviews
+- High-res walkthrough
+
+## Introduction
 
 This folder -- including these instructions -- walks through *loading* one day's worth of
 broadband hydrophone data to AWS S3 object storage: Both sound files and 
