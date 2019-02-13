@@ -26,7 +26,6 @@ logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO)
 
 bucket_name = 'whaledr'
 folder_name = 'megaptera'
-
 def load_creds():
     """
         Utility function to read s3 credential file for
@@ -142,7 +141,7 @@ def data_push(data_url):
                 ax = plt.Axes(fig, [0., 0., 1., 1.])
                 ax.set_axis_off()
                 fig.add_axes(ax)
-                cax = ax.imshow(specgram, interpolation="nearest", extent=extent, norm=norm, 
+                cax = ax.imshow(specgram, interpolation="nearest", extent=extent, norm=norm,
                     cmap='viridis')
                 dpi = fig.get_dpi()
                 fig.set_size_inches(512/float(dpi), 512/float(dpi))
@@ -171,8 +170,8 @@ def data_push(data_url):
         else:
             logging.info("Skipped Url: %s", data_url)
     # check for unwanted URL format.
-    except TypeError:
-        logging.info('Url with type error: %s', data_url)
+    except Exception as err:
+        logging.info('Url with error: %s is %s', err, data_url)
 
 
 if __name__ == '__main__':
@@ -184,8 +183,8 @@ if __name__ == '__main__':
         process = 12
         process = multiprocessing.cpu_count() if process > multiprocessing.cpu_count() else process
         pool = Pool(process)
-        
-        pool.map(data_push, url_list, chunksize=len(url_list)//process)  # process data_inputs iterable with pool
+
+        pool.map(data_push, url_list, chunksize = len(url_list)//process)  # process data_inputs iterable with pool
     finally:
         pool.close()
         pool.join()
