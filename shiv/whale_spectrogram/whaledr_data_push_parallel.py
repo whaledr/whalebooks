@@ -26,6 +26,7 @@ logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO)
 
 bucket_name = 'whaledr'
 folder_name = 'megaptera'
+
 def load_creds():
     """
         Utility function to read s3 credential file for
@@ -154,7 +155,7 @@ def data_push(data_url):
                 filename = st[0].stats.network+'_'+st[0].stats.station+'_'+st[0].stats.location+'_'+st[0].stats.channel+'_'+str(UTCDateTime(pingtimes[i])).replace("-", "_").replace(
         ":", "_")
                 plt.savefig(filename[:-8] + '.jpg')
-                client.upload_file(filename[:-8] + '.jpg', '{}/{}/{}/{}/'.format(bucket_name, folder_name, hydrophone_name, url_date) +filename[:-8] + '.jpg')
+                client.upload_file(filename[:-8] + '.jpg', bucket_name ,'{}/{}/{}/'.format(folder_name, hydrophone_name, url_date) +filename[:-8] + '.jpg')
                 os.remove(filename[:-8] + '.jpg')
                 plt.cla()
                 plt.clf()
@@ -162,7 +163,7 @@ def data_push(data_url):
 
                 # save audio
                 Save2Wav(st[0], filename, samp_rate)
-                client.upload_file(filename[:-8] + '.wav', '{}/{}/{}/{}/'.format(bucket_name, folder_name, hydrophone_name, url_date) + filename[:-8] + '.wav')
+                client.upload_file(filename[:-8] + '.wav', bucket_name, '{}/{}/{}/'.format( folder_name, hydrophone_name, url_date) + filename[:-8] + '.wav')
                 os.remove(filename[:-8] + '.wav')
                 # delete large objects to release memory.
                 del trace, st[0]
@@ -184,7 +185,7 @@ if __name__ == '__main__':
         process = multiprocessing.cpu_count() if process > multiprocessing.cpu_count() else process
         pool = Pool(process)
         
-        pool.map(data_push, url_list)  # process data_inputs iterable with pool
+        pool.map(data_push, url_list, len(url_list)//process)  # process data_inputs iterable with pool
     finally:
         pool.close()
         pool.join()
