@@ -184,7 +184,7 @@ if __name__ == '__main__':
         process = multiprocessing.cpu_count() if process > multiprocessing.cpu_count() else process
         pool = Pool(process)
         
-        pool.map(data_push, url_list, chunksize=len(url_list)//process)  # process data_inputs iterable with pool
+        pool.map(data_push, url_list)  # process data_inputs iterable with pool
     finally:
         pool.close()
         pool.join()
