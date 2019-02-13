@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 import requests
 from lxml import html
 import boto3
+import multiprocessing
 from multiprocessing import Pool
 import json
 import gc
@@ -23,6 +24,8 @@ import gc
 logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO)
 
 
+bucket_name = 'whaledr'
+folder_name = 'megaptera'
 def load_creds():
     """
         Utility function to read s3 credential file for
@@ -123,18 +126,23 @@ def data_push(data_url):
                 halfbin_freq = (freq[1] - freq[0]) / 2.0
                 freq = np.concatenate((freq, [freq[-1] + 2 * halfbin_freq]))
                 time = np.concatenate((time, [time[-1] + 2 * halfbin_time]))
+                extent = (time[0] - halfbin_time, time[-1] + halfbin_time,
+                    freq[0] - halfbin_freq, freq[-1] + halfbin_freq)
                 # colormap setting
                 vmin = 0.50  # default should be 0 to start from the min number of the spectrgram
                 vmax = 0.95  # default should be 1 to end at the max number of the spectrgram
                 _range = float(specgram.max() - specgram.min())
                 vmin = specgram.min() + vmin * _range
                 vmax = specgram.min() + vmax * _range
+                norm = Normalize(vmin, vmax)  # to scale a 2-D float X input to the (0, 1) range for input to the cmap
 
                 # Save spectrogram
                 fig = plt.figure(frameon=False, figsize=(8, 8))
                 ax = plt.Axes(fig, [0., 0., 1., 1.])
                 ax.set_axis_off()
                 fig.add_axes(ax)
+                cax = ax.imshow(specgram, interpolation="nearest", extent=extent, norm=norm, 
+                    cmap='viridis')
                 dpi = fig.get_dpi()
                 fig.set_size_inches(512/float(dpi), 512/float(dpi))
                 ax.axis('tight')
@@ -146,7 +154,7 @@ def data_push(data_url):
                 filename = st[0].stats.network+'_'+st[0].stats.station+'_'+st[0].stats.location+'_'+st[0].stats.channel+'_'+str(UTCDateTime(pingtimes[i])).replace("-", "_").replace(
         ":", "_")
                 plt.savefig(filename[:-8] + '.jpg')
-                client.upload_file(filename[:-8] + '.jpg', 'himatdata', 'whaledr_renamed/{}/{}/'.format(hydrophone_name, url_date) +filename[:-8] + '.jpg')
+                client.upload_file(filename[:-8] + '.jpg', '{}/{}/{}/{}/'.format(bucket_name, folder_name, hydrophone_name, url_date) +filename[:-8] + '.jpg')
                 os.remove(filename[:-8] + '.jpg')
                 plt.cla()
                 plt.clf()
@@ -154,7 +162,7 @@ def data_push(data_url):
 
                 # save audio
                 Save2Wav(st[0], filename, samp_rate)
-                client.upload_file(filename[:-8] + '.wav', 'himatdata', 'whaledr_renamed/{}/{}/'.format(hydrophone_name, url_date) + filename[:-8] + '.wav')
+                client.upload_file(filename[:-8] + '.wav', '{}/{}/{}/{}/'.format(bucket_name, folder_name, hydrophone_name, url_date) + filename[:-8] + '.wav')
                 os.remove(filename[:-8] + '.wav')
                 # delete large objects to release memory.
                 del trace, st[0]
@@ -169,11 +177,14 @@ def data_push(data_url):
 if __name__ == '__main__':
     start_time = time.time()
     # provide the URL for the day to extract data for.
-    mainurl = 'https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/2017/10/09/'
+    mainurl = 'https://rawdata.oceanobservatories.org/files/CE04OSBP/LJ01C/11-HYDBBA105/2019/01/12/'
     url_list = get_data_url_list(mainurl)
     try:
-        pool = Pool(12)                         # Create a multiprocessing Pool
-        pool.map(data_push, url_list)  # process data_inputs iterable with pool
+        process = 12
+        process = multiprocessing.cpu_count() if process > multiprocessing.cpu_count() else process
+        pool = Pool(process)
+        
+        pool.map(data_push, url_list, chunksize=len(url_list)//process)  # process data_inputs iterable with pool
     finally:
         pool.close()
         pool.join()
