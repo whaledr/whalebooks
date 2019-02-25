@@ -182,7 +182,7 @@ def push_manifest():
     s3_bucket = boto3.resource('s3',aws_access_key_id=creds_data['key_id'],
          aws_secret_access_key=creds_data['key_access'])
 
-    client_request = boto3.client('s3',aws_access_key_id=creds_data['key_id'],
+    client = boto3.client('s3',aws_access_key_id=creds_data['key_id'],
              aws_secret_access_key=creds_data['key_access'])
 
     bucket = s3_bucket.Bucket(bucket_name)
