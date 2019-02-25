@@ -194,8 +194,6 @@ def push_manifest():
             pass
     with open('data.json', 'w') as outfile:
         json.dump(files, outfile)
-
-
     client.upload_file('data.json', bucket_name, folder_name + manifest_file, ExtraArgs={'ACL':'public-read'})
     os.remove('data.json')
 
@@ -213,4 +211,5 @@ if __name__ == '__main__':
     finally:
         pool.close()
         pool.join()
+    push_manifest()
     logging.info("--- %s seconds ---" % (time.time() - start_time))
