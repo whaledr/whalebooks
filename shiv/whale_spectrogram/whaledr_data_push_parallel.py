@@ -26,6 +26,8 @@ logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO)
 
 bucket_name = 'whaledr'
 folder_name = 'megaptera'
+manifest_delimiter = '___'
+manifest_file = '/whalemanifest.json'
 def load_creds():
     """
         Utility function to read s3 credential file for
@@ -173,6 +175,27 @@ def data_push(data_url):
     except Exception as err:
         logging.info('Url with error: %s is %s', err, data_url)
 
+def push_manifest():
+    """
+        Utility function to push updated manifest json data.
+    """
+    s3_bucket = boto3.resource('s3',aws_access_key_id=creds_data['key_id'],
+         aws_secret_access_key=creds_data['key_access'])
+
+    client = boto3.client('s3',aws_access_key_id=creds_data['key_id'],
+             aws_secret_access_key=creds_data['key_access'])
+
+    bucket = s3_bucket.Bucket(bucket_name)
+    files = []
+    for obj in bucket.objects.filter(Delimiter='', Prefix=folder_name):
+        if obj.key.endswith('.jpg'):
+            files.append(obj.key[len(folder_name)+1:].replace('/', manifest_delimiter).split('.')[0])
+        else:
+            pass
+    with open('data.json', 'w') as outfile:
+        json.dump(files, outfile)
+    client.upload_file('data.json', bucket_name, folder_name + manifest_file, ExtraArgs={'ACL':'public-read'})
+    os.remove('data.json')
 
 if __name__ == '__main__':
     start_time = time.time()
@@ -188,4 +211,5 @@ if __name__ == '__main__':
     finally:
         pool.close()
         pool.join()
+    push_manifest()
     logging.info("--- %s seconds ---" % (time.time() - start_time))
