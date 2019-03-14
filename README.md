@@ -24,6 +24,11 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 
 ### Outreach
 
+- We need a plan for EE's project (Arctic plus learning TL)
+  - Erica to drive this
+- Send instructions for sending me back links to interesting stuff
+- Shima Challenge idea; open data, open code
+  - Down the road when we are a bit more advanced: Make the source data public and host a challenge
 - Megaptera is working again; let's  plan the release
   - Metadata: Location, time of year, humpback expected residency patterns (info in the filename for example)
     - Translational element: Rob to talk to RCC
