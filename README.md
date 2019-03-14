@@ -24,6 +24,12 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 
 ### Outreach
 
+- Get in touch with POGO; Erica mentions they are doing ML tutorials for low frequency whale calls
+- Need some alternatives for color scale dictionaries
+- Interview Shima for cloud success on Azure
+- Let's go to 8
+- Possibly cut at 5 - 10 Hz (0.01) 
+- EE will have 40 students available April 1 to learn all about marine mammals
 - We need a plan for EE's project (Arctic plus learning TL)
   - Erica to drive this
 - Send instructions for sending me back links to interesting stuff
