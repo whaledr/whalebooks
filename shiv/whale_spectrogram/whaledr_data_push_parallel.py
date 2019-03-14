@@ -144,7 +144,7 @@ def data_push(data_url):
                 ax.set_axis_off()
                 fig.add_axes(ax)
                 cax = ax.imshow(specgram, interpolation="nearest", extent=extent, norm=norm,
-                    cmap='viridis')
+                    cmap='bone')
                 dpi = fig.get_dpi()
                 fig.set_size_inches(512/float(dpi), 512/float(dpi))
                 ax.axis('tight')
