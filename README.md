@@ -1,8 +1,9 @@
-# Whalebooks 🐬🐳🐋🌊🐟🐠🐡
+# Whalebooks
 
 
 This repository supports an ad hoc research group from UW, APL, and affiliates: Concerning submarine acoustic
 data from broadband hydrophones; and with a particular emphasis on cetology, the study of whales. 
+
 
 ## Links and references (see below for status and planning)
 
@@ -22,7 +23,28 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 
 ### Outreach
 
-- Megaptera is in transition to public release; with many moving parts
+- Megaptera is working again; let's  plan the release
+  - Metadata: Location, time of year, humpback expected residency patterns (info in the filename for example)
+    - Translational element: Rob to talk to RCC
+    - Follow up with Shima on Michelle for cartoons
+  - Goal: Promote the awareness and usability of RCO
+  - Figures
+    - Greyscale as a save format; so how to give color options (or live with a single color scale choice): Zero latency is key
+    - Label axes: Cutoff at 16khz
+    - Five seconds, not more than 10
+      - Tic marks and numbers 0 5 10 and 0 8 16 but not a grid
+    - Square images and standardization
+  - Training: Rebuild the training sequence (Rob)
+  - Experts
+    - Kerri can contact some experts
+    - Michelle Fournet
+    - Kate Stafford
+    - Alison Stimper
+    - Rebecca Dunlop
+    - And so on: Get a listing of these folks from Shima
+    - Israel group: Global working group for Humpback whale social sounds. Gozzman
+    - Melinda Rekdahl
+    - Jessica Chen
   - Address current usability feedback 
     - Train what *is* but also what *is not*
   - Clean up spectrogram presentation
@@ -30,6 +52,17 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
   - Connect with OrcaNav
   - Connect with the Google Team, Scott V, William W, other science teams
 - Seattle Aq? PSC? UW SoO (with UWT, Queens College)? 
+
+
+### Broadband Hydrophone: Storm and Wind Noise
+- Shima's study
+- SOFAR approaches the surface towards Oregon and to the North (Arctic)
+- Sound gets trapped and propagates
+- Shiv has started the work on simple SNR characterization: Reducing processing time
+  - Related: Can sample occasionally rather than comprehensively
+
+
+
 
 ### Training
 
