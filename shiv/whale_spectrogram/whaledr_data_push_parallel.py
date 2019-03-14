@@ -149,7 +149,7 @@ def data_push(data_url):
                 fig.set_size_inches(512/float(dpi), 512/float(dpi))
                 ax.axis('tight')
                 ax.set_xlim(0, end)
-                ax.set_ylim(0, 11)
+                ax.set_ylim(0.01, 8)
                 ax.grid(False)
                 ax.set_xlabel('Time [s]')
                 ax.set_ylabel('Frequency [kHz]')
