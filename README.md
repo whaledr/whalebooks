@@ -9,6 +9,7 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 
 * [Whaledr](https://whale-dr.firebaseapp.com/#/play) is the first version of our whale identification game
   * Data: [Regional Cabled Array](https://interactiveoceans.washington.edu/story/The_Regional_Cabled_Array)
+  * OOI is [here](oceanobservatories.org/communit-tools) leads to the notebooks we have shared so far
 * The [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) is currently available
   * A3150919_08_1970_01_01T00_00_45_767212Z is a truly excellent low-frequency humpback call
 * The [Megaptera game](http://megaptera.swipesforscience.org/#/) specific to Humpbacks
@@ -27,6 +28,7 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
   - Metadata: Location, time of year, humpback expected residency patterns (info in the filename for example)
     - Translational element: Rob to talk to RCC
     - Follow up with Shima on Michelle for cartoons
+  - Oh shoot I screwed up and need to go back one button
   - Goal: Promote the awareness and usability of RCO
   - Figures
     - Greyscale as a save format; so how to give color options (or live with a single color scale choice): Zero latency is key
