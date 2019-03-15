@@ -2,7 +2,8 @@
 
 
 This repository supports an ad hoc research group from UW, APL, and affiliates: Concerning submarine acoustic
-data from broadband hydrophones; and with a particular emphasis on cetology, the study of whales. 
+data from broadband hydrophones; and with a particular emphasis on cetology, the study of whales
+[.](https://github.com/robfatland/ops)
 
 
 ## Links and references (see below for status and planning)
