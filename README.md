@@ -22,50 +22,51 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 
 ## Status / Plans (modified Feb 13 2019)
 
-### Outreach
+### Megaptera Release Planning
 
-- Get in touch with POGO; Erica mentions they are doing ML tutorials for low frequency whale calls
-- Need some alternatives for color scale dictionaries
-- Interview Shima for cloud success on Azure
-- Let's go to 8
-- Possibly cut at 5 - 10 Hz (0.01) 
-- EE will have 40 students available April 1 to learn all about marine mammals
-- We need a plan for EE's project (Arctic plus learning TL)
-  - Erica to drive this
-- Send instructions for sending me back links to interesting stuff
-- Shima Challenge idea; open data, open code
-  - Down the road when we are a bit more advanced: Make the source data public and host a challenge
-- Megaptera is working again; let's  plan the release
-  - Metadata: Location, time of year, humpback expected residency patterns (info in the filename for example)
-    - Translational element: Rob to talk to RCC
-    - Follow up with Shima on Michelle for cartoons
-  - Oh shoot I screwed up and need to go back one button
-  - Goal: Promote the awareness and usability of RCO
-  - Figures
-    - Greyscale as a save format; so how to give color options (or live with a single color scale choice): Zero latency is key
-    - Label axes: Cutoff at 16khz
-    - Five seconds, not more than 10
-      - Tic marks and numbers 0 5 10 and 0 8 16 but not a grid
-    - Square images and standardization
-  - Training: Rebuild the training sequence (Rob)
-  - Experts
-    - Kerri can contact some experts
-    - Michelle Fournet
-    - Kate Stafford
-    - Alison Stimper
-    - Rebecca Dunlop
-    - And so on: Get a listing of these folks from Shima
-    - Israel group: Global working group for Humpback whale social sounds. Gozzman
-    - Melinda Rekdahl
-    - Jessica Chen
-  - Address current usability feedback 
-    - Train what *is* but also what *is not*
-  - Clean up spectrogram presentation
+#### Schedule
+- March 20: Rob to create an email distro with focus persons called out for a community heads-up
+- March 20: Rob to ping RCC for interest
+- March 20: Rob to have new training sequence installed below
+- April 1 start of term: EE to have 40 students interested in learning about marine mammals...
+- April 10: Request for EE plan/schedule for BATL project
   - Formalize { data resources > training data pipeline } 
-  - Connect with OrcaNav
-  - Connect with the Google Team, Scott V, William W, other science teams
+- April 20: Pre-release to students and colleagues for comment
+- May 30: Wide release with OOI RCO CAVA announcement
+
+#### Connections with the community
+
+- Contact POGO; Erica: 'They are doing ML tutorials for low frequency whale calls'
+- Rob to interview Shima on the topic of 'cloud success on the Azure platform' 
+- Shima's challenge idea: Something along the lines of a kaggle competition
+- Connect with OrcaNav
+- Connect with the Google Team, Scott V, William W, other science teams
 - Seattle Aq? PSC? UW SoO (with UWT, Queens College)? 
 
+#### Megaptera App (including tasks for Shrey to consider)
+- Color scale dictionary options
+  - Generate six spectrograms for different circumstances (see the links below on Training for examples)
+  - For each generate greyscale, existing color scale, 'bone' and three other options to consider
+  - The resulting 36 images will inform how the app gets rebuilt
+- Revise spectrogram generator
+  - Frequency range 0.01 kHz to 8.0 kHz (coordinate with Shiv)
+  - Duration 10 seconds
+  - Square as is now the case; group to validate whether this is still human-parseable
+  - Three tic marks on each access with labels: 0 4 8 vertical left; 0 5 10 horizontal top
+- Landing
+  - Fun!
+  - Promote accessibility of marine data science
+  - Promote awareness and usability of RCO
+- Training
+  - Rob's new training sequence needed <---- here ---->
+  - Follow up Shima to Michelle on cartoons
+  - Need a comprehensive 'Whale / Fail / Flail' sequence with play-on-click audio
+  - Metadata: Location, time of year, humpback expected residency patterns
+- Play
+  - Revised spectrogram per above
+  - Oops button
+  - Go To Chat toggle would be super nice
+  - Can we work from base greyscale png to projecting a User-chosen color scheme in the browser?
 
 ### Broadband Hydrophone: Storm and Wind Noise
 - Shima's study
@@ -75,9 +76,9 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
   - Related: Can sample occasionally rather than comprehensively
 
 
+### Please re-factor the following into the above material
 
-
-### Training
+#### EE work
 
 - Erica E. driving a bioacoustic workflow project
   - Hydrophone archive > decomposition > spectrograms > training data > CNN transfer learning > classifier > whale data
@@ -88,7 +89,7 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
   - Potential to share at ASA (Kentucky: May, San Diego: September)  
   - Potential to share at OceanHackWeek-2 (late August)
 
-### Research
+#### Research
 
 - Kerri S.: Signal processing reference
   - Seger, Kerri D., Mahdi H. Al-Badrawi, others. "An Empirical Mode Decomposition-based detection and classification approach for marine mammal vocal signals." The Journal of the Acoustical Society of America 144, no. 6 (2018): 3181-3190.
@@ -104,7 +105,7 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
   - Audience objectives: Outreach, teaching, research, operational
 
 
-### Funding
+#### Funding
 * Valentina S., Shima A., Erica E., Scott V. (OrcaSound): Southern Resident KW study proposal in eval
   * 'Otherwise': Some other path forward (hackathons etc)
 * Generally: Scientists driving proposals based on this technical substrate
