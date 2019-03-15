@@ -28,6 +28,7 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 - March 20: Rob to create an email distro with focus persons called out for a community heads-up
 - March 20: Rob to ping RCC for interest
 - March 20: Rob to have new training sequence installed below
+- March 20: Rob to refactor the stuff at the top and bottom of this README into this section
 - April 1 start of term: EE to have 40 students interested in learning about marine mammals...
 - April 10: Request for EE plan/schedule for BATL project
   - Formalize { data resources > training data pipeline } 
