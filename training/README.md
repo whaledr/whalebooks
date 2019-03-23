@@ -8,7 +8,8 @@
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_27_55
 
 
-##### For contrast it would be good to have a quiet signal here
+##### A relatively quiet signal (and notice the mechanical clicks)
+http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T12_55_15
 
 
 ##### Loud background noise; and notice two sharp high-frequency clicks: From a sonar called an ADCP that measures ocean current 
@@ -21,7 +22,9 @@ http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YD
 
 ##### need boat noise
 
-##### need the mid-freq mechanical noise
+
+##### This is mid-low-freq mechanical chatter noise apparent in many of the BBH images
+http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T05_53_10
 
 ## Things that *are* Humpback whales 
 ### We like to refer to them as *megaptera* which means 'big wing'
@@ -69,6 +72,7 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 
 ## Subtleties
+### *Hoc esset cetus*
 
 ##### ADCP noise plus what I would classify as Mechanical Clutter; and yet clear megaptera whups are audible
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_17_50
@@ -79,3 +83,5 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 ##### A complex signal to decipher: ADCP clicks, mechanical noise... but there is a faint call near the end
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_33_35
 
+#### this is a megaptera moo (hovering below a lot of clutter)
+http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T01_59_35
