@@ -1,6 +1,7 @@
 # Megaptera Tutorial
 
-## Things that are not Humpback whales (*Megaptera novaeangliae*)
+## Things that are *not* Humpback whales 
+### *Hoc est a Megaptera novaeangliae*
 
 
 ##### Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern that obscures quiet signals
@@ -20,7 +21,8 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 ##### need the mid-freq mechanical noise
 
-## Things that *are* Humpback whales (we like to abbreviate them as *megaptera* which means 'big wings')
+## Things that *are* Humpback whales 
+### We like to refer to them as *megaptera* which means 'big wing'
 
 ##### megaptera (Humpback whale): Two distinct calls. Listen for echoes from both. The echo is the call reflecting off the ocean surface. Try and correspond pitch to the height of the signal in the image.
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_01_20
