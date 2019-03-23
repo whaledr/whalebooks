@@ -21,11 +21,10 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 #### Need Dolphin vocalizations at high frequency
 
-
-
-Dolphin sounds drop quite far down in frequency; still no clear megaptera though. Fail. 
-
+#### This one is a faint but clear low frequency only megap; it needs to go way down in the list also
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T11_31_00
+
+
 
 This looks and sounds mechanical, probably a boat engine running near the microphone. Notice it is low frequency but has a band or frequency width. This is one of several 'mechanical noise' patterns we see and don't want to mistake for whales. Sometimes both mechanical noise and whale calls are present in the same clip; and these we want to classify as Whales. This one: Just Fail. 
 
