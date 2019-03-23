@@ -15,7 +15,9 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20
 
 
-##### Need a couple examples of dolphin vocalizations at high frequency
+##### High frequencey vocalizations of (probably) dolphins; so *not* humpbacks; click **Fail**
+http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T18_43_55
+
 
 ##### need boat noise
 
