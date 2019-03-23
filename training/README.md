@@ -46,19 +46,11 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_17_50
 
-#### left off here
-
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T20_03_20
-
-'mooing' that shows both continuous and staccato (picket fence) components
-
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T19_34_35
-
-More megaptera calls; in the vertical direction there are many overtones (so it is a dashed line) and these are staccato in time giving the picket fence effect. Notice how it is irregular and feels articulated. This is an important way to distinguish megaptera vocalization from mechanical noise. Whale.
+#### a sequence of whups (sound 'bubbly') and the start of a clear call at the end
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T16_29_55
 
-This is classified as Whale. 
+# here
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T14_31_45
 
