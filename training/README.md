@@ -10,7 +10,7 @@
 ##### [A relatively quiet signal (and notice the mechanical clicks)](http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T12_55_15)
 
 
-##### [Loud background noise; note sharp high-frequency clicks from a sonar called an ADCP that measures ocean current] (http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20)
+##### [Loud background noise with sharp high-frequency clicks from a sonar] (http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20)
 
 
 ##### [High frequencey vocalizations of (probably) dolphins; so *not* humpbacks; click **Fail**](http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T18_43_55)
