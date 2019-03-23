@@ -34,19 +34,19 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_01_20
 
-#### left off with this one: 
+#### low frequency megaptera calls, no overtones
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T14_58_45
 
-This is a sequence of short  up chirps: We would classify this as Megaptera. Here is another; the chirps sound like someone is blowing bubbles.  Whale.
+#### Two megaptera calls seem to overlap (middle and final thirds)
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_22_55
 
-Two ADCP bands plus Mechanical Clutter; and yet three distinct megaptera sounds, 1 is faint at low frequency, then 2 and 3 with overtones are hard to differentiate; perhaps one animal with a sharp pitch shift. Whale.
+#### ADCP noise plus what I would classify as Mechanical Clutter; and yet clear megaptera whups are audible
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_17_50
 
-Another example of regular mechanical clutter; but with clear low frequency megaptera calls. Whale.
+#### left off here
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T20_03_20
 
