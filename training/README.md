@@ -50,25 +50,13 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T16_29_55
 
-# here
+#### megaptera call with an amazing modulation (pitch change)
 
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T14_31_45
-
-Regular boat noise; but there are two Megaptera calls audible: Whale.
-
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T16_19_25
-
-Here there is a faint megaptera call mid-way but this is really a judgement call for you the player: It is so faint that it probably serves the project better to classify this one as Fail. A good criterion might be 'You listen to the clip and say Ah that is for sure a nice clear Humpback whale call'. In this case we recommend Fail.
-
-Verified
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_19_55
 
-A last megaptera example with an amazing pitch shift. This clearly shows the frequency band of the audible part of a humpback call. Classification: Whale.
+# here
 
-
-
-More interesting calls (this needs modification to the right kind of URL)
-https://s3-us-west-2.amazonaws.com/whaledr/megaptera/LJ01A/2017_10_06/OO_HYVM1__YDH_2017_10_06T20_42_40
+http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T20_42_40
 
 Whuups:
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_42_05
@@ -94,5 +82,5 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 Interesting repeated loud chirps:
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_57_25
 
-Super clear loud call but sadly truncated on both sides:
+Super clear loud call but truncated on both sides:
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_03_15
