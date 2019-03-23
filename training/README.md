@@ -3,14 +3,14 @@
 ## Things that are not Humpback whales (*Megaptera novaeangliae*)
 
 
-### Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern that obscures quiet signals
+##### Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern that obscures quiet signals
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_27_55
 
 
-### For contrast it would be good to have a quiet signal here
+##### For contrast it would be good to have a quiet signal here
 
 
-### Loud background noise; and notice two sharp high-frequency clicks: From a sonar called an ADCP that measures ocean current 
+##### Loud background noise; and notice two sharp high-frequency clicks: From a sonar called an ADCP that measures ocean current 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20
 
 
