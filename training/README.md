@@ -23,20 +23,14 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 ## Things that *are* Humpback whales (we like to abbreviate them as *megaptera* which means 'big wings')
 
 ##### megaptera (Humpback whale): Two distinct calls. Listen for echoes from both. The echo is the call reflecting off the ocean surface. Try and correspond pitch to the height of the signal in the image.
-
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_01_20
 
 ##### low frequency megaptera calls, no overtones
-
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T14_58_45
 
 ##### Two megaptera calls seem to overlap (middle and final thirds)
-
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_22_55
 
-##### ADCP noise plus what I would classify as Mechanical Clutter; and yet clear megaptera whups are audible
-
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_17_50
 
 ##### a sequence of whups (sound 'bubbly') and the start of a clear call at the end
 
@@ -68,6 +62,12 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 ##### Loud clear megaptera signal in two parts; truncated on both sides
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_03_15
+
+
+## Subtleties
+
+##### ADCP noise plus what I would classify as Mechanical Clutter; and yet clear megaptera whups are audible
+http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_17_50
 
 ##### This one is a faint but clear low frequency only megap; it needs to go way down in the list also
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T11_31_00
