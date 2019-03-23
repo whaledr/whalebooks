@@ -51,29 +51,22 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T16_29_55
 
 #### megaptera call with an amazing modulation (pitch change)
-
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_19_55
 
-# here
-
+#### remarkable echo
 http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T20_42_40
 
-Whuups:
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_42_05
-
-Non-overtone megaptera call:
+#### Non-overtone megaptera vocal
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T16_54_40
 
-Picket
+#### clicking sound (resembles a picket fence): This resembles the call of a sperm whale which 
+#### echo-locates. However there are studies indicating that humpbacks may echo-locate
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_44_50
 
-Moovertones, intense
+#### 'mooing' sounds with an intense overtone pattern
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_00_10
 
-Bubbleator
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_35_20
-
-Very sharp clear whups: 
+#### very sharp clear whups
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_52_45
 
 Big burp:
