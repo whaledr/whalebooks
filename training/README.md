@@ -49,7 +49,7 @@
 ##### [clicking sound (resembles a picket fence): This resembles the call of a sperm whale which echo-locates. However there are studies indicating that humpbacks may echo-locate](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T02_44_50)
 
 
-##### [another picket fence / echo-locating sound; we will call these megaptera until the whale biologists tell us not to] (http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_06_15)
+##### [another picket fence echo-location... call these megaptera until the whale biologists tell us not to](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_06_15)
 
 
 ##### ['mooing' sounds with an intense overtone pattern](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_00_10)
