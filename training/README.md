@@ -26,15 +26,15 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 
 
 
-This looks and sounds mechanical, probably a boat engine running near the microphone. Notice it is low frequency but has a band or frequency width. This is one of several 'mechanical noise' patterns we see and don't want to mistake for whales. Sometimes both mechanical noise and whale calls are present in the same clip; and these we want to classify as Whales. This one: Just Fail. 
+#### need boat noise
 
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T20_21_35
 
-This is a classic megaptera (Humpback whale) call. In fact there are two distinct calls, one at the beginning and the other at the end of the clip. Listen for echoes from both. The echo is the call reflecting off the ocean surface. Finally notice that the first call is higher in pitch than the second. This is visible in the lowest frequencies visible in the spectrogram for each call. Whale.
+
+#### megaptera (Humpback whale): Two distinct calls. Listen for echoes from both. The echo is the call reflecting off the ocean surface. Try and correspond pitch to the height of the signal in the image.
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T03_01_20
 
-Here is another with an amazing number of overtones that reach far up into the high frequency band Again this is a very clear Megaptera call with remarkable pitch modulation. Whale.
+#### left off with this one: 
 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T14_58_45
 
