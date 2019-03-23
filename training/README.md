@@ -4,24 +4,22 @@
 ### *Hoc est a Megaptera novaeangliae*
 
 
-##### [Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern that obscures quiet signals](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_27_55)
+- [Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern that obscures quiet signals](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_27_55)
 
 
-##### [A relatively quiet signal (and notice the mechanical clicks)](http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T12_55_15)
+- [A relatively quiet signal (and notice the mechanical clicks)](http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T12_55_15)
 
 
-#####
-
-[Loud background noise with sharp high-frequency clicks from a sonar](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20)
+- [Loud background noise with sharp high-frequency clicks from a sonar](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20)
 
 
-##### [High frequencey vocalizations of (probably) dolphins; so *not* humpbacks; click **Fail**](http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T18_43_55)
+- [High frequencey vocalizations of (probably) dolphins; so *not* humpbacks; click **Fail**](http://megaptera.swipesforscience.org/#/review/LJ01A___2017_10_06___OO_HYVM1__YDH_2017_10_06T18_43_55)
 
 
-##### need boat noise
+- need boat noise
 
 
-##### [This is mid-low-freq mechanical chatter noise apparent in many of the BBH images](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T05_53_10)
+- [This is mid-low-freq mechanical chatter noise apparent in many of the BBH images](http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T05_53_10)
 
 
 ## Things that *are* Humpback whales 
