@@ -1,5 +1,4 @@
-New tutorial
-
+# Megaptera Tutorial
 
 Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern making it difficult to hear 
 quiet signals of interest: Fail. 
@@ -23,13 +22,6 @@ http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YD
 #### Need Dolphin vocalizations at high frequency
 
 
-
-
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T17_42_20
-
-Dolphins, ADCP; but no megaptera. Fail. 
-
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T00_11_00
 
 Dolphin sounds drop quite far down in frequency; still no clear megaptera though. Fail. 
 
