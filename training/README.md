@@ -1,16 +1,18 @@
 New tutorial
 
-This is a complex signal: ADCP, some noise... but there is a faint call near the end: Whale.
-http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_33_35
-
 
 Loud hiss: Perhaps rain or wind on the surface of the ocean; a common pattern making it difficult to hear 
 quiet signals of interest: Fail. 
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_27_55
 
+
 This is background noise with two sharp high-frequency clicks: Fail. The clicking instrument is a
-special kind of sonar used by oceanographers to measure ocean current and related things.
+special kind of sonar called an ADCP that is used by oceanographers to measure ocean currents.
 http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T18_18_20
+
+
+This is a complex signal: ADCP clicks, some ongoing noise... but there is a faint call near the end: Whale.
+http://megaptera.swipesforscience.org/#/review/LJ01C___2019_01_12___OO_HYEA1__YDH_2019_01_12T06_33_35
 
 
 (Probably) Dolphin vocalizations at high frequency; this is not a Humpback so is classified Fail. 
