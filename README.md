@@ -14,6 +14,9 @@ data from broadband hydrophones; and with a particular emphasis on cetology, the
 * The [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) is currently available
   * A3150919_08_1970_01_01T00_00_45_767212Z is a truly excellent low-frequency humpback call
 * The [Megaptera game](http://megaptera.swipesforscience.org/#/) specific to Humpbacks
+  * Disambiguation issues: potential mechanical noise and sperm whale echolocation signals 
+    * [Sperm whale site](https://dosits.org/galleries/audio-gallery/marine-mammals/toothed-whales/sperm-whale/?vimeography_gallery=30&vimeography_video=227089578)
+    * [Another](https://ocr.org/sounds/sperm-whale/) with good 'creak' examples interspersed between single clicks
 * Seabass? 
 * Mobysound?
 * HARP? (Hildebrand, Scripps)
