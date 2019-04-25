@@ -111,7 +111,7 @@ def data_push(data_url):
             nfft = int(_nearest_pow_2(wlen * samp_rate))  # number of fft points of each bin
             per_lap = 0.995      # percentage of overlap
             nlap = int(nfft * float(per_lap))   # number of overlapped samples
-            timestep = 5  # save results every 5 seceonds (no overlap)
+            timestep = 10  # save results every 5 seceonds (no overlap)
 
             for i in range(0, len(pingtimes), timestep):
                 st = stream.slice(UTCDateTime(pingtimes[i]), UTCDateTime(pingtimes[i]) + step_size)
@@ -144,12 +144,12 @@ def data_push(data_url):
                 ax.set_axis_off()
                 fig.add_axes(ax)
                 cax = ax.imshow(specgram, interpolation="nearest", extent=extent, norm=norm,
-                    cmap='viridis')
+                    cmap='bone')
                 dpi = fig.get_dpi()
                 fig.set_size_inches(512/float(dpi), 512/float(dpi))
                 ax.axis('tight')
                 ax.set_xlim(0, end)
-                ax.set_ylim(0, 11)
+                ax.set_ylim(0.01, 8)
                 ax.grid(False)
                 ax.set_xlabel('Time [s]')
                 ax.set_ylabel('Frequency [kHz]')
