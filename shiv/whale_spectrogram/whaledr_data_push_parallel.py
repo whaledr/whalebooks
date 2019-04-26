@@ -1,5 +1,7 @@
 """
 Script to generate and upload spectogram for whale calls from OOI website.
+  - Be sure to modify the source data URL; see bottom of this script for details
+  - Be sure to examine the node pool code and modify as appropriate; again at bottom of this file (__main__)
 """
 import math as M
 import numpy as np
@@ -209,15 +211,24 @@ def push_manifest():
     os.remove('data.json')
 
 if __name__ == '__main__':
+    
     start_time = time.time()
-    # provide the URL for the day to extract data for.
+    
+    # provide the correct source URL including year/month/day from:
+    #   Oregon Shelf Benthic Cabled Experiment Package, 80 m: CE02SHBP/LJ01D/11-HYDBBA106/yyyy/mm/dd/
+    #   Endurance Offshore (distal continental shelf), 500 m: CE04OSBP/LJ01C/11-HYDBBA105/yyyy/mm/dd/
+    #   Oregon Slope Base sea floor, 2900 m:                  RS01SLBS/LJ01A/09-HYDBBA102/yyyy/mm/dd/
+    #   Oregon Slope Base shallow profiler mooring, 200 m:    RS01SBPS/PC01A/08-HYDBBA103/yyyy/mm/dd/
+    #   Axial Base Seafloor; 2600 m:                          RS03AXBS/LJ03A/09-HYDBBA302/yyyy/mm/dd/
+    #   Axial Base shallow profiler mooring, 200 m:           RS03AXPS/PC03A/08-HYDBBA303/yyyy/mm/dd/
     mainurl = 'https://rawdata.oceanobservatories.org/files/CE04OSBP/LJ01C/11-HYDBBA105/2019/01/14/'
+    
     url_list = get_data_url_list(mainurl)
+    
     try:
         process = 12
         process = multiprocessing.cpu_count() if process > multiprocessing.cpu_count() else process
         pool = Pool(process)
-
         pool.map(data_push, url_list, chunksize = len(url_list)//process)  # process data_inputs iterable with pool
     finally:
         pool.close()
