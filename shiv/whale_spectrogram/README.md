@@ -55,7 +55,13 @@ quickly to remind yourself!!
 - `conda activate whaledr` is an absolutely necessary command when you log in so the Python script runs
   - also if you run `screen`! (and this walkthrough has some useful notes on using `screen`)
   - also if you reconstitute an AMI!
-- keep access keys out of repo directories; to avoid wasting tens of thousands of dollars and/or days and weeks of your time
+- access keys
+  - keep them out of git repo directories; avoid wasting tens thousand dollars and days of your time
+  - keep them in `creds.json` in your root directory; where they look like this with ***double*** quotes: 
+  
+```
+{ "key_id": "APIIJDHGUFK8TZKHCDIZ", "key_access" : "uUilebaksX9AaEa2WZYUCnXaZIUc87EgazsHdw45" }
+```
 
 ## Overviews
 
