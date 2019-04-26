@@ -237,7 +237,7 @@ version of your repo and proceed as above. You must delete the access keys at AW
 usable. Generating new keys (that you keep out of GitHub) is easy and just takes a couple of minutes.***
 
 
-flag left off here April 26 2019
+flag remainder of this section needs review
 
 Credential builder script follows; follow these steps from the home directory of your Ubuntu EC2 instance.
 
@@ -269,30 +269,40 @@ with open(os.path.join(home,'creds.json'), 'a') as cred:
 
 ### Configure the data processing script
 
-Edit the Python script `python whaledr_data_push_parallel.py` making two changes 
+Modify the Python script `python whaledr_data_push_parallel.py` as follows
 
-- The following line contains year, month and day strings at the extreme right: 
+- `bucket_name` should reflect the correct destination S3 bucket
+- `folder_name` should reflect the proper folder within that bucket
+  - subfolders will be created to break out a hydrophone ID and the date of the processed data 
+- `mainurl` should reflect hydrophone choice plus year-month-day you wish to process
+- `nCores` is an integer that should reflect the number of cores on your processing machine
 
 ```
-mainurl = 'https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/2017/10/09/'
+    bucket_name = 'whaledr'
+    folder_name = 'megaptera'
+    .
+    .
+    .
+    mainurl = 'https://rawdata.oceanobservatories.org/files/CE04OSBP/LJ01C/11-HYDBBA105/2019/01/14/'
+    .
+    .
+    .
+    
+    try:
+        nCores = 12
 ``` 
 
-Modify the date in this string to reflect the desired day to process.
-
-- The following line of the script contains the number `12` which reflect the number of **cores** (not vCPUs) 
-on the EC2 instance. Modify this if necessary to match the number of cores on the instance you are using.
-- Example: The c5n.xlarge EC2 instance has 4 vCPUs and therefore 2 cores. `12` becomes `2` in the following:
+The number of cores on an EC2 instance is typically half the number of virtual CPUs or vCPUs. For example
+the c5n.xlarge EC2 instance has 4 vCPUs and therefore 2 cores so the script would read
 
 ```
-        pool = Pool(12)                         # Create a multiprocessing Pool
+        nCores = 2
 ```
-
-**Note** that the script writes to an S3 bucket named `himatdata/whaledr_renamed`. 
-Make sure your script is writing to the S3 location you intend.
 
 
 ### Run the script
 
+flag from here down needs review
 
 Since the script will require a number of hours to run it is simplest to start it as a background job. 
 This can be done for example using `nohup` but we suggest using the Linux `screen` utility. This is 
