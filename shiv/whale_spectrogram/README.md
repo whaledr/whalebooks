@@ -47,22 +47,22 @@ access data from a particular site and date.
 
 
 - Oregon Shelf Benthic Cabled Experiment Package, 80 meters depth
-  - [web page](https://oceanobservatories.org/site/ce02shbp/)
+([web page](https://oceanobservatories.org/site/ce02shbp/))
   - data qualifiers: /CE02SHBP/, LJ01D/, 11-HYDBBA106/, 2015/,  09/, 03/
 - Endurance Offshore (distal continental shelf), 500 meters depth
-  - [web page](https://oceanobservatories.org/site/ce04osbp/)
+([web page](https://oceanobservatories.org/site/ce04osbp/))
   - data qualifiers: CE04OSBP/, LJ01C/, 11-HYDBBA105/, 2015/, 09/, 03/
 - Oregon Slope Base sea floor, 2900 meters depth
-  - [web page](https://oceanobservatories.org/site/rs01slbs/)
+([web page](https://oceanobservatories.org/site/rs01slbs/))
   - data qualifiers: RS01SLBS/, LJ01A/, 09-HYDBBA102/, 2015/, 09/, 03/ 
 - Oregon Slope Base shallow profiler mooring, 200 meters depth
-  - [web page](https://oceanobservatories.org/site/rs01sbps/)
+([web page](https://oceanobservatories.org/site/rs01sbps/))
   - data qualifiers: RS01SBPS/, PC01A/, 08-HYDBBA103/, 2015/, 09/, 03/
 - Axial Base Seafloor; 2600 meters 
-  - [web page](https://oceanobservatories.org/site/rs03axbs/)
+([web page](https://oceanobservatories.org/site/rs03axbs/))
   - data at RS03AXBS/, LJ03A/, 09-HYDBBA302/, 2015/, 09/, 03/ 
 - Axial Base shallow profiler mooring, 200 meters depth (offline as of summer 2018) 
-  - [web page](https://oceanobservatories.org/site/rs03axps/)
+([web page](https://oceanobservatories.org/site/rs03axps/))
   - data at RS03AXPS/, PC03A/, 08-HYDBBA303/, 2015/, 09/, 03/
 
 
