@@ -68,16 +68,9 @@ access data from a particular site and date.
 
 ### Good megaptera days / sites
 
+See **Data Manifest** below
 
-- 2018-11-15T06:07:47Z    80meter
-- 2018-12-10T12:50:45Z    80meter
-- 2018-12-28T09:23:24Z    80meter
-- 2019-01-12T03:10:31Z    500meter   <--- very nice day
-  - re-tiled on April 25 2019 0-8khz and 10 seconds. Site code is LJ01C
-- 2019-01-07T14:55:27Z    500meter   
-- 2019-01-14T11:39:34Z    500meter   <--- 
-  - currently in progress April 26 2019, 0 -- 8 khz, 10 seconds, site code LJ01C
-- 2018-12-28T03:17:33Z    SlopeBase
+
 
 ## Pay Serious Attention
 
@@ -333,16 +326,15 @@ this being 24 hours x 60 minutes x 12 5-second intervals per minute x 2 file typ
 
 - whaledr bucket
   - megaptera folder
-    - 500 meter Endurance array hydrophone
-      - January 12 2019
-    - Oregon slope base hydrophone
-      - October 6 2017
-
-- himatdata bucket
-  - whaledr_renamed folder
-    - Oregon slope base hydrophone
-      - 2017 October 03, 04, 05
-      - 2017 October 07 (partial), 08, 09, 10, 11, 12, 13, 17
+    - 500 m Endurance Offshore January 12 2019: Partially complete
+    - 500 m Endurance Offshore January 14 2019: Partially complete
+    - Needed: 
+      - Oregon slope base October 6 2017
+      - 80 meter Cabled Endurance benthic 2018-11-15
+      - 80 meter Cabled Endurance benthic 2018-12-10 (12:50)
+      - 80 meter Cabled Endurance benthic 2018-12-28 (9:23)
+      - 500 m Endurance Offshore 2019-01-07 (14:00)
+      - Oregon slope base 2018-12-28 (03:00)
 
 
 ## Post-processing
