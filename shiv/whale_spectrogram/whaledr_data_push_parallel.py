@@ -192,11 +192,13 @@ def push_manifest():
     """
         Utility function to push updated manifest json data.
     """
-    s3_bucket = boto3.resource('s3',aws_access_key_id=creds_data['key_id'],
-         aws_secret_access_key=creds_data['key_access'])
+    s3_bucket = boto3.resource('s3',
+                               aws_access_key_id = creds_data['key_id'],
+                               aws_secret_access_key = creds_data['key_access'])
 
-    client = boto3.client('s3',aws_access_key_id=creds_data['key_id'],
-             aws_secret_access_key=creds_data['key_access'])
+    client = boto3.client('s3',
+                          aws_access_key_id=creds_data['key_id'],
+                          aws_secret_access_key=creds_data['key_access'])
 
     bucket = s3_bucket.Bucket(bucket_name)
     files = []
@@ -226,10 +228,13 @@ if __name__ == '__main__':
     url_list = get_data_url_list(mainurl)
     
     try:
-        process = 12
-        process = multiprocessing.cpu_count() if process > multiprocessing.cpu_count() else process
-        pool = Pool(process)
-        pool.map(data_push, url_list, chunksize = len(url_list)//process)  # process data_inputs iterable with pool
+        nCores = 12
+        
+        # double-check the number of cores: Make sure it does not exceed what is available
+        nCores = multiprocessing.cpu_count() if nCores > multiprocessing.cpu_count() else nCores
+        
+        pool = Pool(nCores)
+        pool.map(data_push, url_list, chunksize = len(url_list)//nCores)  # process data_inputs iterable with pool
     finally:
         pool.close()
         pool.join()
