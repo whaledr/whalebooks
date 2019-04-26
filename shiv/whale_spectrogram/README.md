@@ -43,25 +43,36 @@ to speed up the task.
 - 2018-12-10T12:50:45Z    80meter
 - 2018-12-28T09:23:24Z    80meter
 - 2019-01-12T03:10:31Z    500meter   <--- very nice day
-- 2019-01-07T14:55:27Z    500meter
-- 2019-01-14T11:39:34Z    500meter
+  - re-tiled on April 25 2019 0-8khz and 10 seconds. Site code is LJ01C
+- 2019-01-07T14:55:27Z    500meter   
+- 2019-01-14T11:39:34Z    500meter   <--- 
+  - currently in progress April 26 2019, 0 -- 8 khz, 10 seconds, site code LJ01C
 - 2018-12-28T03:17:33Z    SlopeBase
 
 ## Pay Serious Attention
 
-This section is really ***stuff you will forget after two weeks doing other things*** so please look through it 
-quickly to remind yourself!!
+Ok this is important! This section is what you must read right now, and I really mean it. Why? 
+Because ***this is the stuff you forgot after two weeks spent doing other things***.
+Read through this to remind yourself...
 
-- `conda activate whaledr` is an absolutely necessary command when you log in so the Python script runs
-  - also if you run `screen`! (and this walkthrough has some useful notes on using `screen`)
-  - also if you reconstitute an AMI!
+- This walk-through is really thorough so you are in good shape
+  - but it can always be improved
+- `conda activate whaledr` is an absolutely essential for the Python script to run
+  - if you run `screen` you issue `conda activate whaledr` *therein*
+    - Remember this walkthrough has useful notes on using `screen`
+  - if you reconstitute an AMI that *should* work but doesn't: Why is that? I'll give you a sec...
+    - Answer: Did you say `conda activate whaledr`? 
 - access keys
   - keep them out of git repo directories; avoid wasting tens thousand dollars and days of your time
-  - keep them in `creds.json` in your root directory; where they look like this with ***double*** quotes: 
+  - keep keys in `creds.json` in your root directory; contents look like this with ***double*** quotes: 
   
 ```
 { "key_id": "APIIJDHGUFK8TZKHCDIZ", "key_access" : "uUilebaksX9AaEa2WZYUCnXaZIUc87EgazsHdw45" }
 ```
+
+  - use an S3 Browser (or something) to look in on your S3 bucket situation
+    - your access keys can be tested out in the process; perhaps you need to generate new ones
+    - you can clobber old datasets in preparation for generating new versions
 
 ## Overviews
 
@@ -70,72 +81,84 @@ quickly to remind yourself!!
 - Start an EC2 instance on AWS running Ubuntu
 - Configure a Python environment, processing code and AWS credentials
 - From a `screen` shell start the processing task; and wait for that to complete
-- Note the data contribution in this README
-- Post-process for app
+- Modify this README to reflect the current state of the output dataset: What's done?
+- Proceed to configure the app and so on (not covered here)
 
 ### Medium-resolution walkthrough
+
 
 Read this to get a fairly complete picture of all the steps. They are repeated once more in
 more detail in the following section.
 
 
 - Get an AWS account including user key pair credentials.
-- Log in to the AWS console and start a fairly powerful machine -- say one with 12 cores.
+- Log in to the AWS console and start a fairly powerful machine -- say one with 12 cores
   - We strongly urge you to use an Ubuntu (not an AWS Linux) image for this Virtual Machine
-  - Note that cores and vCPUs are not the same. Generally one core is equivalent to two vCPUs.
-  - Be sure to capture the Key file (file extension `.pem`) in order to `ssh` to this instance.
-- Install a `bash` shell on your own computer if one is not present
-- Use the bash shell to log in to the EC2 instance
-- Follow the directions below to install Miniconda and activate the `whaledr` Python environment
+  - Note that cores and vCPUs are not the same. Generally one core is equivalent to two vCPUs
+  - Be sure to own or generate the ssh key file `xxx.pem` so you can `ssh` or `sftp` to this instance
+- Install a `bash` shell on your own computer if needed; and run it
+  - log in to the EC2 instance
+  - Per details below: Install Miniconda and then install and activate the `whaledr` Python environment
+    - On this same EC2 instance clone this repository (`whalebooks`) and install dependencies
+      - This is done using the `requirements.txt` file found in the data loader Python script directory
+    - Issue `conda activate whaledr` to make the functional environment active
+  
+That's a good start. We now turn the corner to processing details. Your goal is to convert five-minute-duration
+seismic format `xxx.mseed` files into 10-second clips accompanied by spectrograms in an S3 bucket where the 
+broadband hydrophone source and date are captured in the directory-like structure of S3 object storage. Here we go.
 
 
-You now have a good start on this project. We now turn the corner to the processing details.
-
-
-- On this same EC2 instance clone this repository (`whalebooks`) and install the dependencies
-  - This is done using the `requirements.txt` file found in this repo
 - Configure a JSON credentials file in your home directory
   - This file includes both public and private keys and resides outside of any github repo folders
-- Start a Linux `screen` session so that you can leave the subsequent processing job running
-  - You invoke this by simply typing `screen` on the command line
-  - You are then *in* the screen shell; you leave using `ctrl + a + ctrl + d`
-  - You find a running screen session using `screen -ls`
+  - It can be configured on your own computer and transferred to the EC2 instance
+    - For example using `sftp -i xxx.pem ubuntu@12.34.56.78`
+- On the EC2 instance: Start a `screen` session 
+  - Thus you can leave the job running even if you are disconnected from the EC2
+  - Simply type `screen` on the command line
+    - You are then *in* the screen shell; leave using `ctrl + a + ctrl + d`
+    - You find a running screen session using `screen -ls`
     - This returns `There is a screen on: 5981.pts-0.ip-172-31-18-10   (Detached)`
   - You reconnect to this session using `screen 5981.pts-0.ip-172-31-18.10`
-- Edit the Python script `python whaledr_data_push_parallel.py` to reflect your data and EC2 instance size
-- Be sure to enter the day you are processing in the README.md notes of this repository
+- Within `screen` issue `conda activate whaledr`
+- Edit the `whaledr_data_push_parallel.py` to reflect your data and EC2 instance size
+- Run the script: `python whaledr_data_push_parallel.py`
+- Note the data you process in this `README.md` file (or somewhere stable)
+  - Your note should accurately reflect the metadata needed to re-create the results
+    - Date of the data
+    - Location of the hydrophone including location code
+    - Frequency range (e.g. 0-8khz displayed in the images)
+    - Time range (e.g. each sound clip is 10 seconds)
+
+
 
 ## Walkthrough
+
+This walk-through will make much more sense in relation to the previous section. I encourage you
+to read that first before proceeding.
+
 
 The script `whaledr_data_push_parallel.py` 
 selects one *day* of broadband hydrophone data resident on an OOI RCA Engineering 
 [Server](https://rawdata.oceanobservatories.org/files/CE02SHBP/LJ01D/11-HYDBBA106/)
-and pushes this in five-second pieces to an AWS S3 bucket (object storage on the public cloud). 
-Each five-second clip is represented by both an audio file and a spectrogram image file.
-This walkthrough covers all the steps needed to run this script on a Linux machine; 
-in fact an AWS EC2 instance (Virtual Machine) running Ubuntu Linux.
+and pushes this as short sound clips in `.wav` format to AWS S3 object storage. 
+Each clip is also represented by a spectrogram image file in `.jpg` format.
+This walkthrough covers running this script on an AWS EC2 instance (Virtual Machine) running Ubuntu Linux.
 
 
-On AWS the baseline **c5.4xlarge** EC2 instance processes a single day of broadband hydrophone
-data in five hours. The source data are 'seismic format' **.mseed** files spanning 5 minutes. 
-The output files are **.png** images and **.wav** sound files spanning 5 seconds; hence each
-**.mseed** file produces 12 x 5 x 2 = 120 output files.
-
-Setup parts 1 and 2 accomplish the following...
-
-* Install and update-to-latest a small version of Anaconda called 'Miniconda'
-* Create and activate a Python environment called *whaledr*
-* Clone this `whalebooks` repository and run pip install using `requirements.txt`
-  * This installs the proper versions of the necessary Python packages
+On AWS a **c5.4xlarge** EC2 instance processes a single day of broadband hydrophone
+data in five hours. The source data are seismic format `.mseed` files spanning 5 minutes. 
+The output files are `.png` images and `.wav` sound files spanning a few seconds (as of
+April 2019: 10 seconds). Hence each `.mseed` file produces 6 x 5 x 2 = 60 output files.
+There are 720 files required to span an hour; or 17,280 files per day if the source record is 
+uninterrupted.
 
 
 ### Environment setup part 1
 
 - Start an AWS EC2 instance running Ubuntu Linux
-  - Be sure to store the access key file (`xxxx.pem`) on your local machine away from all GitHub repo folders
-- Once the machine has started: Log in and run the following commands
-  - Do not run them as a block; rather run each command only after the prior one has finished running
-  - Some commands require you to confirm a sub-action. It is safe to respond `yes` to all the prompts.
+  - Be sure to store the access key file (`xxxx.pem`) on your local machine outside of any and all GitHub repo folders
+- Log in and run the following commands individually (i.e. not as a block; some are interactive)
+  - It is safe to respond `yes` to all prompts
 
 
 ```
@@ -147,7 +170,8 @@ conda create -n whaledr python=3.6
 conda activate whaledr
 ```
 
-You should now be operating in the *whaledr* Python environment 
+You should now be operating in the *whaledr* Python environment. However if you use the `screen` command 
+(see below) you will have to re-run `conda activate whaledr` inside the screen shell.
 
 
 ### Environment setup part 2
@@ -161,23 +185,29 @@ cd whalebooks/shiv/whale_spectogram/
 pip install -r requirements.txt
 ```
 
-The above script summarized: 
+This provides you with the necessary package *within* your `whaledr` Python environment. That is: 
+Doing the package install with `whaledr` activated makes those packages *stick* to the `whaledr`
+environment. 
 
 
 ### Credential setup
 
-Before you can run ```whaledr_data_push_parallel.py``` you must install a credential file for AWS S3 access.
+Install a credential file for AWS S3 access.
 This can be done using the following Python script; or by directly editing the file `creds.json` in your
 home directory. 
 
 
 ***WARNING: If you manage to place your credentials file in a GitHub repo; and if those credentials find 
-their way onto the GitHub website: With near 100% certainty they will be found very quickly (by a bot) and used to 
-mine bitcoin at your expense. Typical cost to you over two hours will be 15,000 USD. The only way to
-fix this -- should it happen -- is to immediately Delete your access keys on the AWS console. Deleting 
-them from GitHub will not work as GitHub will keep the old credentials as part of version control. Delete
-the keys and then generate new keys and start over.***
+their way onto the GitHub website: With 100% certainty they will be found by a bot in minutes and used to 
+mine bitcoin at your expense. Over the next two hours this will run you 15,000 US dollars. The only way to
+fix the situation -- should it happen -- is to immediately Delete your access keys on the AWS console and
+shut down all of the offending instances. If you think that deleting keys from GitHub is sufficient you 
+will be surprised (as GitHub is about version control) that the bots will find the keys in a previous
+version of your repo and proceed as above. You must delete the access keys at AWS so that they are no longer
+usable. Generating new keys (that you keep out of GitHub) is easy and just takes a couple of minutes.***
 
+
+flag left off here April 26 2019
 
 Credential builder script follows; follow these steps from the home directory of your Ubuntu EC2 instance.
 
