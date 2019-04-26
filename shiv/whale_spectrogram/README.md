@@ -30,14 +30,40 @@ to speed up the task.
 
 ### Hydrophones
 
-- 80 meter site on LJ01D
-- Endurance 500 meter site LJ01C
-- Oregon Slope Base profiler, seafloor, about 2900 meters LJ01A
-- 200 meter *platform* for the Oregon Slope Base Shallow Profiler PC01A
-- Axial Base seafloor for profiler LJ03A
-- Axial shallow profiler 200 meter platform (offline since last summer) PC03A
+In the OOI Regional Cabled Observatory program we are familiar with six broadband hydrophones capable of recording
+ambient acoustics at 40khz (and higher) sampling rates. These are the microphones that pick up humpback whale calls; 
+as well as sounds made by other sorts of whales, boat engine noise, mechanical sounds (moorings rattling for example), 
+and surface wind/wave action noise. 
+
+
+Hydrophone data is archived at a 
+['raw data' ftp server](https://rawdata.oceanobservatories.org/files/).
+At this website we find a large number (> 130) of sub-folders corresponding to different locations within 
+the Ocean Observing Initiative program. For example   
+the **Coastal Endurance - OR (Oregon) Offshore Cabled Benthic Experiment Package** corresponds to folder `CE04OSBP`. 
+Here are descriptions of the six hydrophones along with corresponding folder names, locations and 
+five-character reference strings:
+
+
+- Oregon Shelf Benthic Cabled Experiment Package, 80 meters depth
+  - [site link](https://oceanobservatories.org/site/ce02shbp/) and hydrophone designator LJ01D
+    - (not to be confused with Oregon *Offshore* (500 meters depth))
+  - data link https://rawdata.oceanobservatories.org/files/CE02shbp/
+- 'Endurance Offshore' (distal continental shelf) at 500 meters depth
+  - [site link]()
+  - [data link](https://rawdata.oceanobservatories.org/files/CE04OSBP/) with hydrophone designator LJ01C
+- Oregon Slope Base deep profiler mooring (this hydrophone is *not* profiling); 2900 meters depth; 
+  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator LJ01A
+- Oregon Slope Base shallow profiler *platform* (not profiling), 200 meters depth; 
+  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator PC01A
+- Axial Base seafloor; need depth and relation to deep profiler; 
+  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator LJ03A
+- Axial Base shallow profiler *platform* (not profiling), 200 meters depth (offline as of summer 2018) 
+  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator PC03A
+
 
 ### Good megaptera days / sites
+
 
 - 2018-11-15T06:07:47Z    80meter
 - 2018-12-10T12:50:45Z    80meter
