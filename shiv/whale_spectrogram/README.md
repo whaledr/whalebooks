@@ -52,8 +52,9 @@ to speed up the task.
 This section is really ***stuff you will forget after two weeks doing other things*** so please look through it 
 quickly to remind yourself!!
 
-- `conda activate whaledr` is absolutely necessary when you log in to an instance to make the Python script run
-  - this applies also if you reconstitute an AMI!
+- `conda activate whaledr` is an absolutely necessary command when you log in so the Python script runs
+  - also if you run `screen`! (and this walkthrough has some useful notes on using `screen`)
+  - also if you reconstitute an AMI!
 - keep access keys out of repo directories; to avoid wasting tens of thousands of dollars and/or days and weeks of your time
 
 ## Overviews
