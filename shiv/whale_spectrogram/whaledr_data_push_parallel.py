@@ -188,7 +188,7 @@ def data_push(data_url):
     except Exception as err:
         logging.info('Url with error: %s is %s', err, data_url)
 
-def push_manifest():
+def push_manifest(creds_data, folder_name, manifest_delimiter, manifest_file, bucket_name):
     """
         Utility function to push updated manifest json data.
     """
@@ -210,10 +210,17 @@ def push_manifest():
     with open('data.json', 'w') as outfile:
         json.dump(files, outfile)
     client.upload_file('data.json', bucket_name, folder_name + manifest_file, ExtraArgs={'ACL':'public-read'})
+    print(len(files))
     os.remove('data.json')
 
 if __name__ == '__main__':
     
+    # temp kluge
+    creds_data = load_creds() 
+    push_manifest(creds_data, folder_name, manifest_delimiter, manifest_file, bucket_name)
+    import sys
+    sys.exit(0)
+
     start_time = time.time()
     
     # provide the correct source URL including year/month/day from:
