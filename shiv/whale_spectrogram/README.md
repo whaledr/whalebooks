@@ -38,28 +38,32 @@ and surface wind/wave action noise.
 
 Hydrophone data is archived at a 
 ['raw data' ftp server](https://rawdata.oceanobservatories.org/files/).
-At this website we find a large number (> 130) of sub-folders corresponding to different locations within 
-the Ocean Observing Initiative program. For example   
-the **Coastal Endurance - OR (Oregon) Offshore Cabled Benthic Experiment Package** corresponds to folder `CE04OSBP`. 
-Here are descriptions of the six hydrophones along with corresponding folder names, locations and 
-five-character reference strings:
+Here we find a large number (> 130) of sub-folders corresponding to different locations or resources of 
+the Ocean Observing Initiative program. We are concerned with only six of these, all located off the coast of Oregon state.
+For example the **Coastal Endurance - OR (Oregon) Offshore Cabled Benthic Experiment Package** corresponds to folder `CE04OSBP`. 
+Below is the key information for these six hydrophones: The site name followed by a link to the site webpage; and then
+the qualifiers needed to point at the raw data files. These qualifiers are appended to the base URL `https://rawdata.oceanobservatories.org/files/`. They are placed in the Python data loader script to 
+access data from a particular site and date.
 
 
 - Oregon Shelf Benthic Cabled Experiment Package, 80 meters depth
-  - [site link](https://oceanobservatories.org/site/ce02shbp/) and hydrophone designator LJ01D
-    - (not to be confused with Oregon *Offshore* (500 meters depth))
-  - data link https://rawdata.oceanobservatories.org/files/CE02shbp/
-- 'Endurance Offshore' (distal continental shelf) at 500 meters depth
-  - [site link]()
-  - [data link](https://rawdata.oceanobservatories.org/files/CE04OSBP/) with hydrophone designator LJ01C
-- Oregon Slope Base deep profiler mooring (this hydrophone is *not* profiling); 2900 meters depth; 
-  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator LJ01A
-- Oregon Slope Base shallow profiler *platform* (not profiling), 200 meters depth; 
-  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator PC01A
-- Axial Base seafloor; need depth and relation to deep profiler; 
-  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator LJ03A
-- Axial Base shallow profiler *platform* (not profiling), 200 meters depth (offline as of summer 2018) 
-  - [site link](https://oceanobservatories.org/site/ce02shbp/) with hydrophone designator PC03A
+  - [web page](https://oceanobservatories.org/site/ce02shbp/)
+  - data qualifiers: /CE02SHBP/, LJ01D/, 11-HYDBBA106/, 2015/,  09/, 03/
+- Endurance Offshore (distal continental shelf), 500 meters depth
+  - [web page](https://oceanobservatories.org/site/ce04osbp/)
+  - data qualifiers: CE04OSBP/, LJ01C/, 11-HYDBBA105/, 2015/, 09/, 03/
+- Oregon Slope Base sea floor, 2900 meters depth
+  - [web page](https://oceanobservatories.org/site/rs01slbs/)
+  - data qualifiers: RS01SLBS/, LJ01A/, 09-HYDBBA102/, 2015/, 09/, 03/ 
+- Oregon Slope Base shallow profiler mooring, 200 meters depth
+  - [web page](https://oceanobservatories.org/site/rs01sbps/)
+  - data qualifiers: RS01SBPS/, PC01A/, 08-HYDBBA103/, 2015/, 09/, 03/
+- Axial Base Seafloor; 2600 meters 
+  - [web page](https://oceanobservatories.org/site/rs03axbs/)
+  - data at RS03AXBS/, LJ03A/, 09-HYDBBA302/, 2015/, 09/, 03/ 
+- Axial Base shallow profiler mooring, 200 meters depth (offline as of summer 2018) 
+  - [web page](https://oceanobservatories.org/site/rs03axps/)
+  - data at RS03AXPS/, PC03A/, 08-HYDBBA303/, 2015/, 09/, 03/
 
 
 ### Good megaptera days / sites
