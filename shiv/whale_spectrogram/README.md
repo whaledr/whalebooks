@@ -269,7 +269,7 @@ with open(os.path.join(home,'creds.json'), 'a') as cred:
 
 ### Configure the data processing script
 
-Modify the Python script `python whaledr_data_push_parallel.py` as follows
+Modify the Python script `whaledr_data_push_parallel.py` as follows
 
 - `bucket_name` should reflect the correct destination S3 bucket
 - `folder_name` should reflect the proper folder within that bucket
