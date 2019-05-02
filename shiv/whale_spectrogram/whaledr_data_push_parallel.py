@@ -143,7 +143,7 @@ def data_push(data_url):
                 # Save spectrogram
                 fig = plt.figure(frameon=False, figsize=(8, 8))
                 ax = plt.Axes(fig, [0., 0., 1., 1.])
-                ax.set_axis_off()
+#                 ax.set_axis_off()
                 fig.add_axes(ax)
                 freq_ticks = [0, 4, 8]
                 time_ticks = [0, 5, 10]
@@ -165,7 +165,7 @@ def data_push(data_url):
                            st[0].stats.channel+'_' + \
                            str(UTCDateTime(pingtimes[i])).replace("-", "_").replace(":", "_")
 
-                plt.savefig(filename[:-8] + '.jpg')
+                plt.savefig(filename[:-8] + '.jpg', bbox_inches='tight')
                 client.upload_file(filename[:-8] + '.jpg', 
                                    bucket_name,
                                    '{}/{}/{}/'.format(folder_name, hydrophone_name, url_date) + \
