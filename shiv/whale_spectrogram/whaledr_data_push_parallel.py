@@ -23,7 +23,7 @@ from multiprocessing import Pool
 import json
 import gc
 
-logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO)
+logging.basicConfig(filename='whaledr_data_upload.log', level=logging.INFO, filemode="w")
 
 
 bucket_name = 'whaledr'
@@ -143,29 +143,35 @@ def data_push(data_url):
                 # Save spectrogram
                 fig = plt.figure(frameon=False, figsize=(8, 8))
                 ax = plt.Axes(fig, [0., 0., 1., 1.])
-                ax.set_axis_off()
+#                 ax.set_axis_off()
                 fig.add_axes(ax)
+                freq_ticks = [0, 4, 8]
+                time_ticks = [0, 5, 10]
+
                 cax = ax.imshow(specgram, interpolation="nearest", extent=extent, norm=norm, cmap='bone')
                 dpi = fig.get_dpi()
                 fig.set_size_inches(512/float(dpi), 512/float(dpi))
-                ax.axis('tight')
                 ax.set_xlim(0, end)
                 ax.set_ylim(0.0, 8.)
                 ax.grid(False)
                 ax.set_xlabel('Time [s]')
                 ax.set_ylabel('Frequency [kHz]')
+                ax.set_xticks(time_ticks)
+                ax.set_yticks(freq_ticks)
+
                 filename = st[0].stats.network+'_' + \
                            st[0].stats.station+'_' + \
                            st[0].stats.location+'_' + \
                            st[0].stats.channel+'_' + \
                            str(UTCDateTime(pingtimes[i])).replace("-", "_").replace(":", "_")
 
-                plt.savefig(filename[:-8] + '.jpg')
+                plt.savefig(filename[:-8] + '.jpg', bbox_inches='tight')
                 client.upload_file(filename[:-8] + '.jpg', 
                                    bucket_name,
                                    '{}/{}/{}/'.format(folder_name, hydrophone_name, url_date) + \
                                        filename[:-8] + '.jpg')
                 os.remove(filename[:-8] + '.jpg')
+                print(filename)
                 plt.cla()
                 plt.clf()
                 plt.close('all')
@@ -230,7 +236,6 @@ if __name__ == '__main__':
     mainurl = 'https://rawdata.oceanobservatories.org/files/CE04OSBP/LJ01C/11-HYDBBA105/2019/01/14/'
     
     url_list = get_data_url_list(mainurl)
-    
     try:
         nCores = 12
         
