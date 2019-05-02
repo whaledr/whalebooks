@@ -218,9 +218,6 @@ if __name__ == '__main__':
     # temp kluge
     creds_data = load_creds() 
     push_manifest(creds_data, folder_name, manifest_delimiter, manifest_file, bucket_name)
-    import sys
-    sys.exit(0)
-
     start_time = time.time()
     
     # provide the correct source URL including year/month/day from:
