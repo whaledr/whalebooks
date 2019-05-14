@@ -18,11 +18,11 @@ The game is cooperative; but it *will* track how many rounds you play on the lea
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Humpback_whale_NOAA.jpg" alt="humpback" width="500"/>
 
-<Attribution: Personnel of NOAA Ship RAINIER: Public domain>
 
-How does this connect to whale research? First we feel that awareness is a good thing for everyone concerned.
+How does this game connect to whale research? First we feel that awareness is a good thing for everyone concerned.
 Second we can train a computer to recognize humpback calls automatically but to do so requires thousands of examples 
-(both *Yes* and *No*). This by the way is machine learning, a sub-discipline of artificial intelligence. 
+(both *Yes* and *No*). By playing the game you contribute to our training data. This by the way is machine learning, 
+a sub-discipline of artificial intelligence. 
 
 
 As you play the game you will notice that each round has two matched pieces: A sound clip and a picture of that sound.
