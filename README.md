@@ -16,6 +16,9 @@ you the experience of hearing a humpback whale 'singing' in the Pacific ocean by
 [this link](http://megaptera.swipesforscience.com) and click on ***Play Now***.
 The game is cooperative; but it *will* track how many rounds you play on the leaderboard.
 
+<img src="https://commons.wikimedia.org/wiki/File:Humpback_whale_NOAA.jpg" alt="humpback" width="500"/>
+
+Attribution: Personnel of NOAA Ship RAINIER [Public domain]
 
 How does this connect to whale research? First we feel that awareness is a good thing for everyone concerned.
 Second we can train a computer to recognize humpback calls automatically but to do so requires thousands of examples 
@@ -26,7 +29,7 @@ As you play the game you will notice that each round has two matched pieces: A s
 Here is an example picture...
 
 
-<img src="https://github.com/whaledr/whalebooks/blob/master/megaptera_spectrogram.png" alt="drawing" width="500"/>
+<img src="https://github.com/whaledr/whalebooks/blob/master/megaptera_spectrogram.png" alt="spectrogram" width="500"/>
 
 
 To help you make sense of this we have included a mini-tutorial in the game website. 
