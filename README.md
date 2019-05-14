@@ -38,6 +38,15 @@ The sound clip is ten seconds long. The bottom-to-top direction is frequency whe
 and squiggles are noises. 
 
 
+Notice in the image that there are two sets of narrow vertical lines, in the upper and lower halves. The upper
+streaks are from a research sonar. The lower streaks are from creaking of the underwater structure. Everything
+else is humpback vocalizations. 
+
+
+The Regional Cabled Observatory maintains several such microphones off the coast of Oregon. 
+
+
+
 
 
 
