@@ -2,7 +2,7 @@
 # Whalebooks
 
 This repo supports citizen science contributions to automatic whale call identification. The most carefully built
-of these three is called **Megaptera** as it is concerned entirely with Humpback whale (Megaptera novaeangliae) 
+of these three is called **Megaptera** as it is concerned entirely with Humpback whale (**Megaptera novaeangliae**) 
 vocalization[.](https://github.com/robfatland/ops)
 
 
