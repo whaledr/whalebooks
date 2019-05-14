@@ -22,7 +22,7 @@ As you play the game you will notice that each round has two matched components:
 Here is an example of that picture...
 
 
-
+<img src="https://github.com/whaledr/whalebooks/blob/master/megaptera_spectrogram.jpg" alt="drawing" width="500"/>
 
 
 
