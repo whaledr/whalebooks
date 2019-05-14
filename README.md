@@ -48,8 +48,6 @@ The Regional Cabled Observatory maintains several such microphones off the coast
 
 
 
-
-
 ## Links and references (see below for status and planning)
 
 * [Whaledr](https://whale-dr.firebaseapp.com/#/play) is the first version of our whale identification game
