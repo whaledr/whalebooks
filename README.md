@@ -1,5 +1,19 @@
 # Whalebooks
 
+This repo supports citizen science contributions to automatic whale call identification. The most carefully built
+of these three is called **Megaptera** as it is concerned entirely with Humpback whale (Megaptera novaeangliae) vocalization.
+
+
+## Megaptera
+
+Oceanographers maintain underwater microphones called *hydrophones* that record audio signals from within the ocean.
+These include noise from boats, the sounds that waves make together with the sounds of wind and rain, and the sounds
+made by sea creatures; particularly whales. Of these there are two broad categories: Toothed whales (porpoises, dolphins,
+orcas, sperm whales) and baleen whales (grey, blue, sei, fin, and humpbacks to name a few). We would like to share with 
+you the experience of hearing a humpback whale under water by means of a game. Simply go to 
+[this link](http://megaptera.swipesforscience.com), sign up and click on ***Play***. 
+
+
 
 This repository supports an ad hoc research group from UW, APL, and affiliates: Concerning submarine acoustic
 data from broadband hydrophones; and with a particular emphasis on cetology, the study of whales
