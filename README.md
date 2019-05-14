@@ -10,8 +10,23 @@ Oceanographers maintain underwater microphones called *hydrophones* that record 
 These include noise from boats, the sounds that waves make together with the sounds of wind and rain, and the sounds
 made by sea creatures; particularly whales. Of these there are two broad categories: Toothed whales (porpoises, dolphins,
 orcas, sperm whales) and baleen whales (grey, blue, sei, fin, and humpbacks to name a few). We would like to share with 
-you the experience of hearing a humpback whale under water by means of a game. Simply go to 
-[this link](http://megaptera.swipesforscience.com), sign up and click on ***Play***. 
+you the experience of hearing a humpback whale 'singing' in the Pacific ocean by means of a game. Simply go to 
+[this link](http://megaptera.swipesforscience.com) and click on ***Play Now***. To get more involved you can Sign Up.
+The game will track how many rounds you play on our leaderboard.
+
+
+How does this affect whale research? Excellent question! We would like to train a computer to recognize humpback calls; 
+but to do so requires thousands of examples (both *Yes* and *No*) for the training to work. This -- by the way -- is an
+example of the relatively new field of machine learning in data science, a sub-discipline of artificial intelligence. 
+As you play the game you will notice that each round has two matched components: A sound clip and a picture of that sound.
+Here is an example of that picture...
+
+
+
+
+
+
+
 
 
 
