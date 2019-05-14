@@ -21,7 +21,7 @@ The game is cooperative; but it *will* track how many rounds you play on the lea
 
 How does this game connect to whale research? First we feel that awareness is a good thing for everyone concerned.
 Second we can train a computer to recognize humpback calls automatically but to do so requires thousands of examples 
-(both *Yes* and *No*). By playing the game you contribute to our training data. This by the way is machine learning, 
+(both *Yes* and *No*). By playing the game you contribute to this training dataset. This by the way is machine learning, 
 a sub-discipline of artificial intelligence. 
 
 
