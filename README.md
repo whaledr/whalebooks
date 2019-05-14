@@ -16,9 +16,9 @@ you the experience of hearing a humpback whale 'singing' in the Pacific ocean by
 [this link](http://megaptera.swipesforscience.com) and click on ***Play Now***.
 The game is cooperative; but it *will* track how many rounds you play on the leaderboard.
 
-<img src="https://commons.wikimedia.org/wiki/File:Humpback_whale_NOAA.jpg" alt="humpback" width="500"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Humpback_whale_NOAA.jpg" alt="humpback" width="500"/>
 
-Attribution: Personnel of NOAA Ship RAINIER [Public domain]
+<Attribution: Personnel of NOAA Ship RAINIER: Public domain>
 
 How does this connect to whale research? First we feel that awareness is a good thing for everyone concerned.
 Second we can train a computer to recognize humpback calls automatically but to do so requires thousands of examples 
