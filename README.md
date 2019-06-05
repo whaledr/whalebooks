@@ -8,7 +8,22 @@ vocalization[.](https://github.com/robfatland/ops)
 
 ## Megaptera
 
-Oceanographers maintain underwater microphones called *hydrophones* that record sounds from within the ocean.
+Back in February 2018 a group of oceanographers gathered at the University of Washington. Their goal was 
+to review the status of an observatory they have installed in the Pacific ocean, an observatory that spans
+across 300 miles of sea floor from the coast of Oregon out to an active volcano called Axial. This observatory
+looks at, listens to, and senses the state of the ocean, sending data back via the internet to the scientists'
+computers for analysis. Reviews like this one are called "hack weeks"; typically lasting for five days and 
+involving lots of programming and sharing of ideas. The underlying questions always include "What is this data 
+trying to tell us?" and "How can we share this with more scientists and students?" 
+
+
+Some attending oceanographers were new to the observatory. They found themselves learning about all of the 
+sensors from scratch: Seismic tremors from the volcano, streaming video of black smokers (a type of volcanic
+vent), measurements of temperature and ocean currents, nutrients fuelling primary production in the upper
+ocean, the migrations of grazing plankton... left off here.
+
+
+maintain underwater microphones called *hydrophones* that record sounds from within the ocean.
 These sounds include boat noise, the sounds that waves make together with the sounds of wind and rain, and the sounds
 made by sea creatures; particularly whales. Concerning whales there are two broad categories: Toothed whales (porpoises, dolphins,
 orcas, sperm whales) and baleen whales (grey, blue, right, sei, fin, and humpback whales to name a few). We would like to share with 
