@@ -26,7 +26,7 @@ These sounds include boat noise, the sounds that waves make together with the so
 made by sea creatures; particularly whales. Concerning whales there are two broad categories: Toothed whales (porpoises, dolphins,
 orcas, sperm whales) and baleen whales (grey, blue, right, sei, fin, and humpback whales to name a few). We would like to share with 
 you the experience of hearing a humpback whale 'singing' in the Pacific ocean by means of a game. Simply go to 
-[this link](http://megaptera.swipesforscience.com) and click on ***Play Now***.
+[this link](http://megaptera.swipesforscience.org) and click on ***Play Now***.
 The game is cooperative; but it *will* track how many rounds you play on the leaderboard.
 
 
