@@ -8,22 +8,20 @@ vocalization[.](https://github.com/robfatland/ops)
 
 ## Megaptera
 
-Back in February 2018 a group of oceanographers gathered at the University of Washington. Their goal was 
-to review the status of an observatory they have installed in the Pacific ocean, an observatory that spans
-across 300 miles of sea floor from the coast of Oregon out to an active volcano called Axial. This observatory
-looks at, listens to, and senses the state of the ocean, sending data back via the internet to the scientists'
-computers for analysis. Reviews like this one are called "hack weeks"; typically lasting for five days and 
-involving lots of programming and sharing of ideas. The underlying questions always include "What is this data 
-trying to tell us?" and "How can we share this with more scientists and students?" 
+Back in February 2018 a group of thirty oceanographers gathered at the University of Washington to learn more
+about a gigantic ongoing undersea experiment called the Regional Cabled Observatory.
+This observatory has taken two decades to build on the floor of
+the eastern Pacific ocean. It spans 300 miles from the coast of Oregon out to an active volcano called Axial 
+and its job is looks at, listens to, and sense the state of the ocean, sending data back via the internet to 
+the scientists' computers for analysis. The UW meeting (called a "hack week") ran for five days 
+with lots of brainstorming and sharing of ideas. The underlying questions on the scientists' minds were
+"What is this data trying to tell us?" and "How can we share this with more scientists and with students?" 
+The array of sensors in the RCO can get a bit overwhelming: Seismic tremors from the volcano, 
+streaming video of black smokers (super-hot volcanic vents), measurements of temperature and 
+ocean currents, nutrient levels that supply primary production in the upper ocean, a steady watch on
+the migrations of grazing plankton... and undersea microphones (*hydrophones*) that record the sounds within the ocean.
 
 
-Some attending oceanographers were new to the observatory. They found themselves learning about all of the 
-sensors from scratch: Seismic tremors from the volcano, streaming video of black smokers (a type of volcanic
-vent), measurements of temperature and ocean currents, nutrients fuelling primary production in the upper
-ocean, the migrations of grazing plankton... left off here.
-
-
-maintain underwater microphones called *hydrophones* that record sounds from within the ocean.
 These sounds include boat noise, the sounds that waves make together with the sounds of wind and rain, and the sounds
 made by sea creatures; particularly whales. Concerning whales there are two broad categories: Toothed whales (porpoises, dolphins,
 orcas, sperm whales) and baleen whales (grey, blue, right, sei, fin, and humpback whales to name a few). We would like to share with 
