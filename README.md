@@ -6,7 +6,7 @@ of these three is called **Megaptera** as it is concerned entirely with Humpback
 vocalization[.](https://github.com/robfatland/ops)
 
 
-## Megaptera
+## Giant-wing
 
 Back in February 2018 a group of thirty oceanographers gathered at the University of Washington to learn more
 about a gigantic ongoing undersea experiment called the Regional Cabled Observatory.
@@ -28,6 +28,7 @@ orcas, sperm whales) and baleen whales (grey, blue, right, sei, fin, and humpbac
 you the experience of hearing a humpback whale 'singing' in the Pacific ocean by means of a game. Simply go to 
 [this link](http://megaptera.swipesforscience.com) and click on ***Play Now***.
 The game is cooperative; but it *will* track how many rounds you play on the leaderboard.
+
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Humpback_whale_NOAA.jpg" alt="humpback" width="500"/>
 
