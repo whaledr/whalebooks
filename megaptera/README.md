@@ -37,6 +37,8 @@ Erica to supply sound clips, to S3.
 
 Discussion on building training datasets.
 
+We need to revisit the use and availability of orcana[v](http://orca.ooirsn.uw.edu/?date=2019-01-12T03:11:39&zoom=sec&site=500meter) and the corresponding ftp server.
+
 
 
 
