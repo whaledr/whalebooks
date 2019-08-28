@@ -35,7 +35,7 @@
 Here is the spectral signal of a passing boat cut from OrcaNav...
 
 
-<img src="https://github.com/whaledr/whalebooks/tech/master/orcanav_passing_boat_spectrogram.png" alt="spectrogram" width="500"/>
+<img src="https://github.com/whaledr/whalebooks/tech/master/orcanav_passing_boat_spectrum.png" alt="spectrogram" width="500"/>
 
 
 ## Other signal sources
