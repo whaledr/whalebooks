@@ -1,3 +1,88 @@
+# Technical overview of the whale project
+
+* Objective 1: Create an interactive citizen science game to build training datasets
+* Objective 2: Use training datasets to create a presence/absence humpback detector
+* Objective 3: Generalize 1 and 2 for use in other research tasks
+* Objective 4: Build a viable outreach program around this material
+* Objective 5: Expand data access to the marine science community towards getting papers written
+
+# Cyber Resources
+
+## OrcaNav is available only on the UW network
+
+* [OrcaNav interface](http://orca.ooirsn.uw.edu)
+  * See Rob for U/P
+  * Images of spectrograms are pre-built at different time scales; giving some nice zoom in / out
+  * To scroll through time be sure to Stop playback
+  * Number of hydrophones = 6; data are intermittently available over days/months/years
+  * Use this interface to select site qualifiers i.e. switch between hydrophones
+    * 80 meter site on LJ01D
+    * 500 meter side on LJ01C (Endurance array)
+    * (Verify this:) Anchor point (sea floor) of the Oregon slope base shallow profiler; code is LJ01A
+    * 200 meter platform Oregon Slope Base shallow profiler PC01A
+    * (Verify this:) Anchor point (sea floor) of the Axial shallow profiler; code is LJ03A
+    * 200 meter platform Axial shallow profiler (Off line since last summer ) PC03A
+    * Finding whale calls: Scan for "quiet" ocean noise days, then zoom in looking for typical signals
+    * Whale days:
+      * http://orca.ooirsn.uw.edu/?date=2018-11-15T06:07:47Z&zoom=sec&site=80meter
+      * http://orca.ooirsn.uw.edu/?date=2018-12-10T12:50:45Z&zoom=sec&site=80meter
+      * http://orca.ooirsn.uw.edu/?date=2018-12-28T09:23:24Z&zoom=sec&site=80meter
+      * http://orca.ooirsn.uw.edu/?date=2019-01-12T03:10:31Z&zoom=sec&site=500meter   <--- very nice day
+      * http://orca.ooirsn.uw.edu/?date=2019-01-07T14:55:27Z&zoom=sec&site=500meter
+      * http://orca.ooirsn.uw.edu/?date=2019-01-14T11:39:34Z&zoom=sec&site=500meter
+      * http://orca.ooirsn.uw.edu/?date=2018-12-28T03:17:33Z&zoom=sec&site=SlopeBase
+
+## Other signal sources
+[Is this useful?](oceanobservatories.org/community-tools) leads to the notebooks we have shared so far
+    * [Sperm whale site](https://dosits.org/galleries/audio-gallery/marine-mammals/toothed-whales/sperm-whale/?vimeography_gallery=30&vimeography_video=227089578)
+    * [Another](https://ocr.org/sounds/sperm-whale/) with good 'creak' examples interspersed between single clicks
+- Bering strait (Erica)
+- HARP, Seabass, Mobysound, Raven (Cornell), OOI, OrcaSound: To do: Look these up... useful?
+
+
+## Games
+* [Megaptera = megaptera.swipesforscience.org](http://megaptera.swipesforscience.org)
+* [Whaledr](https://whale-dr.firebaseapp.com/#/play) (not currently maintained)
+* [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) (not currently maintained)
+  * A3150919_08_1970_01_01T00_00_45_767212Z is a truly excellent low-frequency humpback call
+
+
+## Persons
+- Kerri: Signal processing
+  - Seger, Kerri D., Mahdi H. Al-Badrawi, others. "An Empirical Mode Decomposition-based detection and classification approach for marine mammal vocal signals." The Journal of the Acoustical Society of America 144, no. 6 (2018): 3181-3190.
+    - This is thematically related to the Hilbert-Huang transform
+- Shima: Ambient noise characterization
+  - Of interest: Removing ADCP pings  
+- Rob
+  - eScience; coordination work
+- Christian contributed ships (AIS) notebook
+- William Wilcock
+- Rose Wade: Low-frequency mysticete calls that register on seafloor seismometers
+
+
+## Conceptual project components
+- Species break-down by call types and frequency characteristics
+- Audience objectives: Outreach, teaching, research, operational
+- Sound sources
+  - ambient boat noise, waves, wind, rain, marine life particularly mammals, fish, plankton
+- Odontocetes are toothed whales: porpoises, dolphins, orcas, sperm whales
+- Mysticetes are baleen whales (grey, blue, right, sei, fin, and humpback whales to name a few)
+- [We would like to share with you the experience of hearing a humpback whale 'singing' in the Pacific](http://megaptera.swipesforscience.org)
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Humpback_whale_NOAA.jpg" alt="humpback" width="500"/>
+
+
+- How does this game connect to whale research? Awareness is a good thing! Further: We wish to train a computer to recognize humpback calls automatically. This requires thousands of positive and negative results. You help us build this training dataset.
+  - Each round of the game has two pieces: A sound clip and a picture of that sound.
+
+
+<img src="https://github.com/whaledr/whalebooks/blob/master/megaptera_spectrogram.png" alt="spectrogram" width="500"/>
+
+## Links and references (see below for status and planning)
+
+
+
 ## Status / Plans (modified Feb 13 2019)
 
 ### Megaptera Release Planning
