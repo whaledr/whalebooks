@@ -13,6 +13,11 @@ Just getting started? Coming back and need a review of the moving parts? This is
 * Build a viable outreach program around this material
 * Expand data access to the marine science community towards getting papers written
 
+## Actions for you to take
+
+* Familiarize yourself with the ***cetus*** repo here under whaledr
+  * Particularly this [important README](https://github.com/whaledr/whalebooks/tree/master/shiv/whale_spectrogram)
+* 10 Issues in this repo: Review / resolve / refactor / refurbish
 
 ## Data, code, technology resources
 
