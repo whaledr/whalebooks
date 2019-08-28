@@ -4,7 +4,7 @@
 This repo supports citizen science contributions to automatic whale call identification. **Megaptera** is the
 current (2019) focus, concerned with Humpback whale (**Megaptera novaeangliae**) 
 vocalization[.](https://github.com/robfatland/ops) To get started on the technical components of the project
-please open the [***tech*** folder](http://github.com/whaledr/whalebooks/tech/README.md). 
+please open the [***tech*** folder](https://github.com/whaledr/whalebooks/tree/master/tech). 
 The balance of this page is towards outreach.
 
 
