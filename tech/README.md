@@ -81,6 +81,8 @@ Here is the spectral signal of a passing boat cut from OrcaNav...
   - Of interest: Removing ADCP pings  
   - currently calibrating hydrophone data
   - EPO: Worked with highschool students
+- Shiv
+  - Available!
 - Erica
   - bioacoustic transfer learning (BATL) workflow
     - Hydrophone archive > decomposition > spectrograms > training data > CNN transfer learning > classifier > whale data
