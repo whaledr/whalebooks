@@ -39,14 +39,16 @@ Here is the spectral signal of a passing boat cut from OrcaNav...
 
 
 ## Other signal sources
-[Is this useful?](oceanobservatories.org/community-tools) leads to the notebooks we have shared so far
-    * [Sperm whale site](https://dosits.org/galleries/audio-gallery/marine-mammals/toothed-whales/sperm-whale/?vimeography_gallery=30&vimeography_video=227089578)
-    * [Another](https://ocr.org/sounds/sperm-whale/) with good 'creak' examples interspersed between single clicks
+
+- Broken link: oceanobservatories.org/community-tools was shared notebooks
+- [Sperm whale site](https://dosits.org/galleries/audio-gallery/marine-mammals/toothed-whales/sperm-whale/?vimeography_gallery=30&vimeography_video=227089578)
+- [...and another](https://ocr.org/sounds/sperm-whale/) with good 'creak' examples interspersed between single clicks
 - Bering strait (Erica)
 - HARP, Seabass, Mobysound, Raven (Cornell), OOI, OrcaSound: To do: Look these up... useful?
 
 
-## Games
+## Game links
+
 * [Megaptera = megaptera.swipesforscience.org](http://megaptera.swipesforscience.org)
 * [Whaledr](https://whale-dr.firebaseapp.com/#/play) (not currently maintained)
 * [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) (not currently maintained)
