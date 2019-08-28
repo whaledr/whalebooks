@@ -32,6 +32,12 @@
       * http://orca.ooirsn.uw.edu/?date=2019-01-14T11:39:34Z&zoom=sec&site=500meter
       * http://orca.ooirsn.uw.edu/?date=2018-12-28T03:17:33Z&zoom=sec&site=SlopeBase
 
+Here is the spectral signal of a passing boat cut from OrcaNav...
+
+
+<img src="https://github.com/whaledr/whalebooks/tech/master/orcanav_passing_boat_spectrogram.png" alt="spectrogram" width="500"/>
+
+
 ## Other signal sources
 [Is this useful?](oceanobservatories.org/community-tools) leads to the notebooks we have shared so far
     * [Sperm whale site](https://dosits.org/galleries/audio-gallery/marine-mammals/toothed-whales/sperm-whale/?vimeography_gallery=30&vimeography_video=227089578)
