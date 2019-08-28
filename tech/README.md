@@ -76,8 +76,11 @@ Here is the spectral signal of a passing boat cut from OrcaNav...
 - Sarah
 - Daria
 - Matt
+  - Strong interest in the ML
 - Shima: Ambient noise characterization
   - Of interest: Removing ADCP pings  
+  - currently calibrating hydrophone data
+  - EPO: Worked with highschool students
 - Erica
   - bioacoustic transfer learning (BATL) workflow
     - Hydrophone archive > decomposition > spectrograms > training data > CNN transfer learning > classifier > whale data
@@ -116,12 +119,13 @@ Here is the spectral signal of a passing boat cut from OrcaNav...
 
 <img src="https://github.com/whaledr/whalebooks/blob/master/megaptera_spectrogram.png" alt="spectrogram" width="500"/>
 
-## Open action items
+## Other open action items
 
 - Create an email distro
 - Install new training sequence
 - Review and formalize the continuation plan for BATL { data resources > training data pipeline } 
 - Per Erica check in on POGO doing ML tutorials for low frequency whale calls
+- Erica suggests she provide 10-15 minute .wav files with calls > S3 as resource
 - Shima to contribute a perspective on Azure
 - Shima to comment on a potential kaggle competition
 - Connect with the Google Team, Scott V, William W, other interested parties
