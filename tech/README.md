@@ -40,6 +40,7 @@ Just getting started? Coming back and need a review of the moving parts? This is
 * Game play involves matching an audio file to an image and evaluating "whale / fail"
 * The results are tallied to eventually produce a training dataset
 * The transfer learning process operates on the training data to produce a model
+  * This is what Shiv's ***batl*** repo is for; it stands for Bio-Acoustic Transfer Learning
 * The model is used to evaluate much larger blocks of hydrophone data (years x 6 hydrophones, etcetera)
 * The results are presented in "presence / absence" ribbon format
   * The ribbon can be expanded / contracted to change the granularity
