@@ -13,13 +13,37 @@ Just getting started? Coming back and need a review of the moving parts? This is
 * Build a viable outreach program around this material
 * Expand data access to the marine science community towards getting papers written
 
+
 ## Actions for you to take
+
 
 * Familiarize yourself with the ***cetus*** repo here under whaledr
   * Particularly this [important README](https://github.com/whaledr/whalebooks/tree/master/shiv/whale_spectrogram)
+* Combine cetus with this repo (whalebooks) to make one coherent workflow
 * 10 Issues in this repo: Review / resolve / refactor / refurbish
 
-## Data, code, technology resources
+
+## Workflow of the core project
+
+
+### Touching on data, code, technology resources
+
+
+* Data are pulled in from hydrophones along the RCA cables
+* Data are stored in five-minute sound files on an APL/UW engineering server
+  * These data can be played back using the APL "OrcaNav" application (from within the UW network only)
+* Good candidate days (with plenty of humpback calls) are selected towards the workflow that follows
+  * Only one or two days are required since a single day will produce 864 10-second sound bites
+* These data are pulled from this server (see *sourcechopper* folder code) and cut into 10-second file pairs
+  * Each file pair is a spectrogram image plus an audio file
+* The chopped files are staged for use in the game
+* Game play involves matching an audio file to an image and evaluating "whale / fail"
+* The results are tallied to eventually produce a training dataset
+* The transfer learning process operates on the training data to produce a model
+* The model is used to evaluate much larger blocks of hydrophone data (years x 6 hydrophones, etcetera)
+* The results are presented in "presence / absence" ribbon format
+  * The ribbon can be expanded / contracted to change the granularity
+
 
 ### OrcaNav and broadband hydrophone data
 
