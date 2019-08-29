@@ -1,6 +1,21 @@
 
 # Whalebooks
 
+
+## Folders
+
+
+* tech: technical notes on the project
+* training: Links to good samples (I think from January 12 or so, 2019) for training Megaptera players
+* sourcechopper: Gets 5-minute files from the engineering server and cuts them into 10-second { image + sound } pairs
+* notebooks: Python notebooks that may suffer from some version overlap; see also the whaledr *cetus* repo
+* ais: AIS ship locations close to hydrophones; i.e. register acoustic engine signatures
+* data: A few sound files by way of examples
+
+
+## Overview
+
+
 This repo supports citizen science contributions to automatic whale call identification. **Megaptera** is the
 current (2019) focus, concerned with Humpback whale (**Megaptera novaeangliae**) 
 vocalization[.](https://github.com/robfatland/ops) To get started on the technical components of the project
