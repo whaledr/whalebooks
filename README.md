@@ -77,24 +77,3 @@ else is humpback vocalizations.
 The Regional Cabled Observatory maintains several such microphones off the coast of Oregon. 
 
 
-
-
-## Links and references (see below for status and planning)
-
-* [Whaledr](https://whale-dr.firebaseapp.com/#/play) is the first version of our whale identification game
-  * Data: [Regional Cabled Array](https://interactiveoceans.washington.edu/story/The_Regional_Cabled_Array)
-  * OOI is [here](oceanobservatories.org/communit-tools) leads to the notebooks we have shared so far
-* The [Bering Sea hydrophone game](http://arcticwhaledr.swipesforscience.org) is currently available
-  * A3150919_08_1970_01_01T00_00_45_767212Z is a truly excellent low-frequency humpback call
-* The [Megaptera game](http://megaptera.swipesforscience.org/#/) specific to Humpbacks
-  * Disambiguation issues: potential mechanical noise and sperm whale echolocation signals 
-    * [Sperm whale site](https://dosits.org/galleries/audio-gallery/marine-mammals/toothed-whales/sperm-whale/?vimeography_gallery=30&vimeography_video=227089578)
-    * [Another](https://ocr.org/sounds/sperm-whale/) with good 'creak' examples interspersed between single clicks
-* Seabass? 
-* Mobysound?
-* HARP? (Hildebrand, Scripps)
-* Raven from Cornell?
-* OOI?
-* OrcaSound?
-
-
