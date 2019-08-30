@@ -33,9 +33,30 @@ Just getting started? Coming back and need a review of the moving parts? This is
 * Data are stored in five-minute sound files on an APL/UW engineering server
   * These data can be played back using the APL "OrcaNav" application (from within the UW network only)
 * Good candidate days (with plenty of humpback calls) are selected towards the workflow that follows
-  * Only one or two days are required since a single day will produce 864 10-second sound bites
+  * Only one or two days are required since a single day will produce 8640 10-second sound bites
+  
+I interrupt this review with a precis of some May 2019 correspondence:
+
+> Shiv to consolidate into ***cetus*** repo: spectrogram generator, building classifier, running the classifier against newly generated spectrograms and creating a mapping file on s3 which firebase can use to reflect P(whale). This can be used by Anisha's app to sample based on probability. This code exists across whaledr so I will centralize them in cetus.  
+
+> Rob to build "been away 4 months... need refresher course on what we are doing!!!" 
+
+> Shiv: README addresses side issues (keys on github, EC2 memory issue) by reference.
+
+> Shiv: There is a working cron job setup on travis that accesses S3 and generates a README which has information about the files there, updated every week. See https://github.com/whaledr/cetus/tree/master/data
+
+> Action: Rob to test data preprocessor. Work from the README https://github.com/whaledr/cetus/tree/master/data-preprocessing
+
+> Shiv: Future: Set up automated prediction pipeline using travis to create a lookup file based on the model for each of the spectrogram files sitting on S3 and also for any potential files we'll be generating in future.
+
 * These data are pulled from this server (see *sourcechopper* folder code) and cut into 10-second file pairs
   * Each file pair is a spectrogram image plus an audio file
+    * These are written into an S3 subsubsubfolder
+    * Account number, access keys needed
+    * S3 bucket = whaledr
+    * subsubsubfolder = megaptera/LJ01C/2019_01_12 which is project/hydrophone/date of course
+      * January 12 2019 on this hydrophone has many good whale calls
+      * I suspect the images are not squared up yet
 * The chopped files are staged for use in the game
 * Game play involves matching an audio file to an image and evaluating "whale / fail"
 * The results are tallied to eventually produce a training dataset
@@ -60,9 +81,9 @@ Just getting started? Coming back and need a review of the moving parts? This is
   * Use this interface to select site qualifiers i.e. switch between hydrophones
     * 80 meter site on LJ01D
     * 500 meter side on LJ01C (Endurance array)
-    * (Verify this:) Anchor point (sea floor) of the Oregon slope base shallow profiler; code is LJ01A
+    * (Verify this:) Anchor point (sea floor) of the Oregon slope base shallow profiler; code is LJ01A, 2900m
     * 200 meter platform Oregon Slope Base shallow profiler PC01A
-    * (Verify this:) Anchor point (sea floor) of the Axial shallow profiler; code is LJ03A
+    * (Verify this:) Anchor point (sea floor) of the Axial shallow profiler; code is LJ03A; 2100m
     * 200 meter platform Axial shallow profiler (Off line since last summer ) PC03A
     * Finding whale calls: Scan for "quiet" ocean noise days, then zoom in looking for typical signals
     * Whale days:
